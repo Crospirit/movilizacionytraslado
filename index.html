@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Politrauma para TES</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard */
+}
+
+/* Deshabilitar el clic derecho */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard */
+}
+        header {
+            background-color: #003366; /* Azul oscuro */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            color: #ff6600; /* Naranja */
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        nav a {
+            background-color: #4CAF50; /* Verde */
+            color: white;
+            padding: 15px 30px;
+            margin: 10px 0;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            width: 80%;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #388E3C; /* Verde oscuro */
+        }
+.hidden {
+            display: none;
+        }
+        main {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #003366; /* Azul oscuro */
+            color: white;
+            text-align: center;
+            padding: 5px;
+            font-size: 12px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+         }
+        h1 {
+            color: #003366; /* Azul oscuro */
+        }
+        h2 {
+            color: #1e90ff; /* Azul Dodger */
+        }
+        h3 {
+            color: #336699; /* Azul más claro */
+        }
+        h4 {
+            color: #555555; /* Gris oscuro */
+        }
+        h5 {
+            color: #777777; /* Gris más claro */
+        }
+        h6 {
+            color: #999999; /* Gris muy suave */
+ }
+        section {
+            margin-top: 50px;
+        }
+        .dropdown {
+            width: 80%;
+            text-align: center;
+        }
+        .dropbtn {
+            background-color: #4CAF50; /* Verde */
+            color: white;
+            padding: 15px 30px;
+            margin: 10px 0;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+        }
+        .dropdown-content {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        /* Cambia el color de los botones desplegados */
+        .dropdown-content a {
+            background-color: #FF6600; /* Naranja */
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+            border-radius: 5px;
+            width: 100%;
+            text-align: center;
+        }
+        .dropdown-content a:hover {
+            background-color: #FF4500; /* Naranja oscuro */
+        }
+        .show-more {
+            background-color: #4CAF50; /* Verde */
+            color: white;
+            padding: 15px 30px;
+            margin: 10px 0;
+            font-weight: bold;
+            border-radius: 5px;
+            width: 80%;
+            text-align: center;
+            cursor: pointer;
+        }
++3-            font-size: 14px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        h1 {
+            color: #003366; /* Azul oscuro */
+        }
+        h2 {
+            color: #FFA500; /* Color naranja */
+        }
+        h3 {
+            color: #003366; /* Azul oscuro */
+        }
+        section {
+            margin-top: 50px;
+        }
+  
+        .accordion {
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+        }
+
+        .active, .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+   
+    </style>
+    </style>
+</head>
+<body>
+    <header>
+       <h1>Movilización del Paciente en el Traslado al Centro Sanitario</h1>
+        <p><strong>Autoría: Eloy Díaz</strong></p>
+<p><strong>Enfermero en PAC Sarria</strong></p>
+ </header>
+    <nav>
+      
+        <a href="#Dotación de medios materiales y humanos" class="nav-link">Dotación de medios materiales y humanos</a>
+        <a href="#Movilizacion" class="nav-link">Movilización</a>
+        <a href="#simulacros" class="nav-link">Simulacros</a>
+        <a href="#test" class="nav-link">Test</a>
+    </nav>
+
+   
+    
+    
+</body>
+
+       
+        <section id="Dotación de medios materiales y humanos" class="hidden">
+            
+       <h2>Tipos de ambulancias</h2>
+            
+            <p><h3>Ambulancia Tipo A (No Asistencial)</h3>
+<h4>Dotación de Medios Materiales:</h4>
+<ul>
+    <li>Camilla principal</li>
+    <li>Camilla de cuchara o de palas<button class="accordion">Ver más</button>
+            <div class="panel">
+                <h5>Guía de Uso de la Camilla de Cuchara</h5>
+<h6>Descripción General</h6>
+<p>La camilla de cuchara, también conocida como camilla de palas, es un dispositivo utilizado para la inmovilización y el traslado de pacientes. Su diseño permite separar la camilla en dos mitades longitudinales, facilitando la colocación del paciente sin necesidad de moverlo excesivamente, lo que es crucial en casos de sospecha de lesiones espinales o múltiples traumatismos.</p>
+
+<h6>Indicaciones</h6>
+<ul>
+    <li>Pacientes con sospecha de lesiones espinales.</li>
+    <li>Pacientes politraumatizados.</li>
+    <li>Traslado de pacientes desde lugares de difícil acceso.</li>
+    <li>Situaciones donde se requiere minimizar el movimiento del paciente durante la transferencia.</li>
+</ul>
+
+<h6>Ventajas de la Camilla de Cuchara</h6>
+<ol>
+    <li>Minimiza el movimiento del paciente: La camilla se puede separar en dos mitades, permitiendo colocarla debajo del paciente sin necesidad de moverlo excesivamente.</li>
+    <li>Facilita el traslado en espacios reducidos: Su diseño permite maniobrar en espacios estrechos y de difícil acceso.</li>
+    <li>Compatible con otros dispositivos de inmovilización: Puede utilizarse junto con collarines cervicales y otros dispositivos de inmovilización.</li>
+    <li>Versatilidad: Es adecuada para una amplia variedad de situaciones de emergencia y tipos de pacientes.</li>
+</ol>
+
+<h6>Inconvenientes de la Camilla de Cuchara</h6>
+<ol>
+    <li>Peso: Puede ser más pesada que otras camillas, lo que puede dificultar su manejo en ciertas situaciones.</li>
+    <li>Requiere personal capacitado: Su uso eficaz requiere formación y experiencia para asegurar una correcta inmovilización y traslado del paciente.</li>
+    <li>Volumen: Puede ser voluminosa en ambulancias con espacio limitado.</li>
+</ol>
+
+<h6>Información Técnica de la Camilla de Cuchara</h6>
+<ol>
+    <li>Material: Generalmente está hecha de aluminio o materiales compuestos ligeros pero resistentes, lo que proporciona durabilidad y facilidad de limpieza.</li>
+    <li>Capacidad de carga: La mayoría de las camillas de cuchara están diseñadas para soportar un peso de hasta 150 kg, aunque algunas pueden soportar más.</li>
+    <li>Dimensiones: Las dimensiones pueden variar, pero suelen tener una longitud ajustable para adaptarse a diferentes tamaños de pacientes.</li>
+</ol>
+
+<h6>Guía de Utilización Técnica</h6>
+<ol>
+    <li>Preparación de la camilla:
+        <ul>
+            <li>Colocar la camilla en una superficie plana y asegurarse de que esté limpia y en buen estado.</li>
+            <li>Separar las dos mitades de la camilla.</li>
+        </ul>
+    </li>
+    <li>Colocación del paciente:
+        <ul>
+            <li>Antes de mover al paciente, colocar un collarín cervical si hay sospecha de lesión espinal.</li>
+            <li>Deslizar cada mitad de la camilla debajo del paciente desde los lados, asegurándose de que quede correctamente alineado y centrado.</li>
+            <li>Unir las dos mitades de la camilla, comenzando por la cabeza y luego los pies, asegurándose de que los mecanismos de bloqueo estén bien asegurados.</li>
+        </ul>
+    </li>
+    <li>Fijación del paciente:
+        <ul>
+            <li>Utilizar correas para asegurar al paciente a la camilla, especialmente en el pecho, la pelvis y las extremidades.</li>
+            <li>Verificar que las correas no comprometan la circulación o la respiración del paciente.</li>
+        </ul>
+    </li>
+    <li>Revisión de la inmovilización:
+        <ul>
+            <li>Comprobar que el paciente esté bien inmovilizado y que la camilla esté correctamente ensamblada.</li>
+        </ul>
+    </li>
+    <li>Retirada de la camilla:
+        <ul>
+            <li>Para retirar la camilla, separar las dos mitades y deslizar cada una fuera del paciente con cuidado.</li>
+        </ul>
+    </li>
+</ol>
+
+<h6>Transferencia al Hospital</h6>
+<p>Para realizar la transferencia en el hospital, se debe seguir el mismo procedimiento de separación de las mitades de la camilla para mover al paciente a una camilla hospitalaria, asegurándose de mantener la inmovilización adecuada durante todo el proceso.</p>
+
+<h6>Ventajas</h6>
+<ul>
+    <li>Minimiza el movimiento del paciente durante la colocación.</li>
+    <li>Facilita el traslado en espacios reducidos.</li>
+    <li>Compatible con otros dispositivos de inmovilización.</li>
+    <li>Versátil y adecuada para diversas situaciones de emergencia.</li>
+</ul>
+
+<h6>Consideraciones</h6>
+<ul>
+    <li>Es importante recibir formación adecuada para su uso.</li>
+    <li>Requiere al menos dos personas para su manejo adecuado.</li>
+    <li>Debe revisarse periódicamente para asegurar su buen estado y funcionamiento.</li>
+</ul>
+
+<h6>Mantenimiento</h6>
+<ul>
+    <li>Revisar periódicamente la integridad de la camilla y sus mecanismos de bloqueo.</li>
+    <li>Limpiar adecuadamente después de cada uso para evitar infecciones.</li>
+    <li>Almacenar en un lugar limpio y seco.</li>
+</ul>
+                
+            </div>
+         </li>
+   <li>Colchón de vacío <button class="accordion">Ver más</button>
+            <div class="panel">
+                <h5>Guía de Uso del Colchón de Vacío</h5>
+                
+<h6>Descripción General</h6>
+<p>El colchón de vacío es un dispositivo de inmovilización que utiliza una presión negativa para adaptarse a la forma del cuerpo del paciente. Esto lo convierte en una herramienta esencial para la inmovilización en situaciones de trauma o patologías que requieren estabilización del paciente durante el transporte.</p>
+
+<h6>Indicaciones</h6>
+<ul>
+    <li>Politraumatismos: en sospecha de lesiones en la columna vertebral, pelvis y extremidades. Actúa como una gran férula.</li>
+    <li>Traslados interhospitalarios de pacientes con lesiones que requieran mayor inmovilización.</li>
+    <li>Traslados interhospitalarios de pacientes con fijaciones externas.</li>
+    <li>Traslados que precisen una posición determinada durante todo el trayecto.</li>
+</ul>
+
+<h6>Ventajas del Colchón de Vacío</h6>
+<ol>
+    <li>Adaptación anatómica: El colchón se ajusta al cuerpo del paciente mediante la extracción de aire, lo que permite una inmovilización completa y anatómica sin crear puntos de presión.</li>
+    <li>Reducción de vibraciones: Absorbe hasta un 95% de las vibraciones generadas durante el transporte en el vehículo, minimizando el riesgo de agravar lesiones. Esto es especialmente importante para pacientes con fracturas o sospecha de lesiones medulares.</li>
+    <li>Versatilidad de uso: Es aplicable no solo en casos de trauma grave o sospecha de lesiones medulares, sino también en fracturas de cadera, huesos largos y otras patologías no traumáticas.</li>
+    <li>Inmovilización eficiente y rápida: El colchón proporciona una inmovilización efectiva en poco tiempo. En condiciones óptimas, puede ser colocado en menos de 10 minutos, y en situaciones con el equipo preparado, el tiempo de colocación puede reducirse a 3 minutos.</li>
+    <li>Comodidad para el paciente: El ajuste anatómico reduce significativamente el dolor del paciente y mejora su confort, algo que otros dispositivos rígidos, como la tabla espinal, no pueden ofrecer.</li>
+</ol>
+
+<h6>Inconvenientes del Colchón de Vacío</h6>
+<ol>
+    <li>Costo: Aunque es una herramienta eficaz, su precio puede ser un obstáculo para algunas unidades de emergencia, que optan por alternativas más económicas como la tabla espinal.</li>
+    <li>Tiempo de colocación en emergencias críticas: En emergencias donde el tiempo es esencial, el colchón de vacío puede tardar más en colocarse que otros dispositivos más simples.</li>
+    <li>Requiere personal capacitado: Su uso eficaz requiere formación y experiencia. Un personal no entrenado puede tener dificultades para colocarlo correctamente en situaciones de alta presión.</li>
+    <li>Volumen: Puede ser voluminoso en ambulancias con espacio limitado, y su manipulación requiere al menos dos personas para una colocación adecuada.</li>
+</ol>
+
+<h6>Información Técnica del Colchón de Vacío</h6>
+<ol>
+    <li>Presión negativa: El colchón de vacío funciona extrayendo el aire de su interior para crear una presión negativa entre 200 y 300 mbar (milibares). Esto permite que el colchón se endurezca alrededor del cuerpo del paciente, manteniéndolo inmovilizado y protegido. Este rango de presión es suficiente para garantizar que el colchón mantenga su forma durante el transporte sin comprometer la seguridad ni la comodidad del paciente.</li>
+    <li>Material: El colchón está hecho de un material resistente y flexible que, al extraer el aire, se endurece para proporcionar una inmovilización completa y anatómica. Internamente, está relleno de pequeñas esferas de poliestireno, que se compactan al eliminar el aire, dando rigidez al colchón.</li>
+</ol>
+
+<h6>Guía de Utilización Técnica</h6>
+<ol>
+    <li>Colocación del paciente:
+        <ul>
+            <li>Primero, debe colocarse el colchón de vacío sobre una superficie plana, como una camilla o el suelo.</li>
+            <li>A continuación, el paciente es trasladado al colchón utilizando una camilla de pala o tabla espinal, asegurándose de que quede correctamente alineado y centrado.</li>
+            <li>Luego, se ajusta el colchón alrededor del paciente. En situaciones de fractura, se inmoviliza completamente el área afectada antes de comenzar a extraer el aire.</li>
+        </ul>
+    </li>
+    <li>Extracción del aire (creación de presión negativa):
+        <ul>
+            <li>Con el paciente ya colocado, se utiliza una bomba manual o eléctrica para extraer el aire del colchón. La extracción de aire debe hacerse de manera uniforme, comenzando desde la cabeza hacia los pies, ajustando el colchón de forma anatómica alrededor del cuerpo del paciente.</li>
+            <li>El colchón comenzará a endurecerse a medida que se reduce la presión, garantizando una inmovilización eficaz.</li>
+            <li>Durante este proceso, es importante verificar la alineación del cuerpo y hacer ajustes menores si es necesario antes de que el colchón se endurezca completamente.</li>
+        </ul>
+    </li>
+    <li>Fijación del paciente:
+        <ul>
+            <li>Una vez creado el vacío, se deben utilizar correas para asegurar aún más al paciente, especialmente en situaciones donde es necesario movilizar al paciente repetidamente (por ejemplo, de la camilla a la camilla del hospital).</li>
+            <li>Estas correas deben colocarse sobre el pecho, la pelvis y las extremidades, asegurando una fijación segura sin comprometer la circulación o la respiración del paciente.</li>
+        </ul>
+    </li>
+    <li>Revisión de la inmovilización:
+        <ul>
+            <li>Es importante comprobar la firmeza del colchón y asegurarse de que no haya fugas de aire. Si es necesario, se puede reajustar extrayendo más aire o liberando ligeramente para hacer pequeños cambios en la inmovilización.</li>
+        </ul>
+    </li>
+    <li>Retirada del colchón de vacío:
+        <ul>
+            <li>Para retirar el colchón, simplemente se debe abrir la válvula para reintroducir aire. Esto ablandará el colchón, permitiendo retirar al paciente de forma fácil y segura.</li>
+        </ul>
+    </li>
+</ol>
+
+<h6>Transferencia al Hospital</h6>
+<p>Para realizar la transferencia en el hospital, abriremos la válvula del colchón y soltaremos las cinchas para poder desplegar el colchón sobre la camilla (siempre con control cervical manual). Una vez abierto, le daremos un poquito de dureza al colchón sacando aire de nuevo para que la camilla de cuchara, con la que haremos la transferencia, no se enganche. No se debe realizar la transferencia sin camilla de cuchara, ya que entonces podemos perder toda la inmovilización conseguida con el colchón.</p>
+<img src="https://github.com/Crospirit/tecnicosguiaprueba/blob/images/colchondevacio.jpeg?raw=true" alt="Colchón de vacío" width="500" height="300">
+<h6>Ventajas</h6>
+<ul>
+    <li>Comodidad.</li>
+    <li>Se adapta a todos los traumatismos, el paciente se sostiene de forma más segura.</li>
+    <li>Distribuye la presión de forma más homogénea en las superficies corporales del paciente, reduciendo posibles úlceras.</li>
+    <li>Se puede utilizar combinado con otros elementos de inmovilización habituales (collarín cervical, dama de Elche…).</li>
+    <li>Protege al paciente de las vibraciones y los efectos de la conducción de la ambulancia.</li>
+</ul>
+
+<h6>Consideraciones</h6>
+<ul>
+    <li>Es relativamente frágil, susceptible de roturas según el terreno donde se ponga. Hay que vigilar dónde se coloca y si es necesario colocar una superficie rígida debajo.</li>
+    <li>Hay que tener en cuenta en los traslados aéreos que, al disminuir la presión atmosférica con la altura, el colchón de vacío puede perder consistencia y, por lo tanto, su rigidez. En estos casos debe realizarse un control del vacío de forma más constante para que el colchón esté en todo momento con la rigidez adecuada.</li>
+    <li>Aunque dispone de asas para movilizar al paciente, es necesario colocar una superficie rígida debajo del colchón (tablero espinal o camilla de cuchara) ya que se pueden producir arqueamientos.</li>
+    <li>Es un dispositivo bastante grande, más grande que la camilla, por lo que necesita un lugar de almacenamiento extra en la ambulancia.</li>
+</ul>
+
+<h6>Mantenimiento</h6>
+<ul>
+    <li>Revisar periódicamente la integridad del colchón y la válvula de vacío. Se debe comprobar que no está pinchado o cortado, que se realiza el vacío completo y que la válvula funciona correctamente, haciendo el vacío y esperando unos minutos.</li>
+    <li>Después de usarlo hay que limpiarlo adecuadamente para su almacenamiento.</li>
+
+</ul>
+
+            </div>
+        </li>
+        <li>Dispositivo para trasladar a un paciente sentado<button class="accordion">Ver más</button>
+            <div class="panel"><h5>Guía de Uso de la Silla de Evacuación</h5>
+<h6>Descripción General</h6>
+<p>La silla de evacuación es un dispositivo diseñado para trasladar a personas con movilidad reducida en situaciones de emergencia. Su principal función es facilitar la evacuación segura de edificios, especialmente en casos donde no se puede utilizar el ascensor.</p>
+
+<h6>Indicaciones</h6>
+<ul>
+    <li>Evacuación de personas con movilidad reducida: Ideal para personas que no pueden utilizar las escaleras por sí mismas.</li>
+    <li>Emergencias en edificios: Útil en situaciones de incendio, terremotos, u otras emergencias que requieran una evacuación rápida.</li>
+</ul>
+
+<h6>Ventajas de la Silla de Evacuación</h6>
+<ol>
+    <li>Facilidad de uso: Diseñada para ser operada por una o dos personas, facilitando el traslado del paciente.</li>
+    <li>Seguridad: Equipadas con cinturones de seguridad y frenos para asegurar al paciente durante el traslado.</li>
+    <li>Versatilidad: Adecuada para su uso en escaleras y otros terrenos difíciles.</li>
+</ol>
+
+<h6>Inconvenientes de la Silla de Evacuación</h6>
+<ol>
+    <li>Peso: Algunas sillas pueden ser pesadas, lo que puede dificultar su manejo en ciertas situaciones.</li>
+    <li>Requiere personal capacitado: Su uso eficaz requiere formación y experiencia para asegurar una correcta evacuación.</li>
+</ol>
+
+<h6>Información Técnica de la Silla de Evacuación</h6>
+<ol>
+    <li>Materiales: Generalmente hechas de materiales ligeros pero resistentes como aluminio o acero.</li>
+    <li>Capacidad de carga: Varía según el modelo, pero generalmente soportan entre 150 y 250 kg.</li>
+    <li>Dimensiones: Las dimensiones pueden variar, pero suelen ser compactas y plegables para facilitar su almacenamiento.</li>
+</ol>
+
+<h6>Guía de Utilización Técnica</h6>
+<ol>
+    <li>Preparación:
+        <ul>
+            <li>Colocar la silla de evacuación en una superficie plana y asegurarse de que esté en buen estado.</li>
+            <li>Desplegar la silla si es necesario.</li>
+        </ul>
+    </li>
+    <li>Colocación del paciente:
+        <ul>
+            <li>Ayudar al paciente a sentarse en la silla de evacuación.</li>
+            <li>Asegurar al paciente con los cinturones de seguridad.</li>
+        </ul>
+    </li>
+    <li>Evacuación:
+        <ul>
+            <li>Utilizar las asas y las ruedas para trasladar al paciente por las escaleras o terrenos difíciles.</li>
+            <li>Si es necesario, utilizar los frenos para controlar la velocidad y asegurar la estabilidad.</li>
+        </ul>
+    </li>
+</ol>
+
+<h6>Consideraciones y Precauciones</h6>
+<ul>
+    <li>Revisión periódica: Revisar periódicamente la integridad de la silla y los cinturones de seguridad.</li>
+    <li>Capacitación del personal: Asegurarse de que el personal esté capacitado en el uso adecuado de la silla de evacuación.</li>
+</ul>
+</li>
+    <li>Sábana de traslado o lona de traslados</li>
+    <li>Tablero espinal largo completo con inmovilizador de cabeza y correas de sujeción<button class="accordion">Ver más</button>
+            <div class="panel">
+           <h5>Guía de Uso del Tablero Espinal</h5>
+<h6>Descripción General</h6>
+<p>El tablero espinal, también conocido como tabla espinal o tabla de inmovilización, es un dispositivo médico esencial en el manejo de emergencias y trauma. Su principal función es inmovilizar y transportar a pacientes que han sufrido lesiones traumáticas, especialmente aquellas que pueden afectar la columna vertebral. El objetivo es evitar cualquier movimiento que pueda exacerbar las lesiones y asegurar una transferencia segura del paciente a una unidad de atención médica.</p>
+
+<h6>Indicaciones</h6>
+<ul>
+    <li>Inmovilización de pacientes con lesiones traumáticas: Especialmente útil en casos de sospecha de lesiones en la columna vertebral, fracturas, o trauma múltiple.</li>
+    <li>Transporte seguro de pacientes: Facilita el traslado seguro de pacientes desde el lugar del accidente hasta la ambulancia y desde allí a una instalación médica.</li>
+</ul>
+
+<h6>Ventajas del Tablero Espinal</h6>
+<ol>
+    <li>Inmovilización completa: Proporciona soporte completo al cuerpo del paciente desde la cabeza hasta los pies.</li>
+    <li>Compatibilidad con inmovilizadores cervicales: Diseñado para usarse junto con inmovilizadores cervicales (collares cervicales) para asegurar una inmovilización completa de la columna.</li>
+    <li>Facilidad de transporte: Incorporado con manijas de transporte para facilitar el levantamiento y transporte por parte del personal médico.</li>
+</ol>
+
+<h6>Inconvenientes del Tablero Espinal</h6>
+<ol>
+    <li>Incomodidad: Puede ser incómodo para el paciente debido a su rigidez.</li>
+    <li>Riesgo de úlceras por presión: El uso prolongado puede aumentar el riesgo de úlceras por presión.</li>
+    <li>Limitación de movimientos: Puede limitar el acceso a ciertas áreas del cuerpo para monitoreo o intervenciones médicas.</li>
+</ol>
+
+<h6>Información Técnica del Tablero Espinal</h6>
+<ol>
+    <li>Materiales: Generalmente hecho de materiales ligeros pero resistentes como plástico, compuestos de fibra o madera tratada.</li>
+    <li>Dimensiones: Generalmente, los tableros miden entre 180 y 200 cm de largo y 40 a 50 cm de ancho.</li>
+    <li>Peso: Varía según el material, pero generalmente oscila entre 5 y 10 kg.</li>
+</ol>
+<img src="https://github.com/Crospirit/tecnicosguiaprueba/blob/images/tablero%20espinal.jpg?raw=true" alt="Tablero espinal" width="150" height="300">
+<h6>Guía de Utilización Técnica</h6>
+<ol>
+    <li>Preparación:
+        <ul>
+            <li>Colocar el tablero espinal sobre una superficie plana.</li>
+            <li>Asegurarse de que el tablero esté limpio y en buen estado.</li>
+        </ul>
+    </li>
+    <li>Colocación del paciente:
+        <ul>
+            <li>Utilizar una camilla de pala o tabla espinal para trasladar al paciente al tablero.</li>
+            <li>Alinear y centrar correctamente al paciente en el tablero.</li>
+        </ul>
+    </li>
+    <li>Inmovilización:
+        <ul>
+            <li>Utilizar correas ajustables para asegurar al paciente en su lugar.</li>
+            <li>Colocar inmovilizadores cervicales si es necesario.</li>
+        </ul>
+    </li>
+    <li>Transporte:
+        <ul>
+            <li>Levantar y transportar al paciente utilizando las manijas de transporte.</li>
+            <li>Asegurarse de que el paciente esté inmovilizado durante todo el proceso de transporte.</li>
+        </ul>
+    </li>
+</ol>
+
+<h6>Consideraciones y Precauciones</h6>
+<ul>
+    <li>Revisión periódica: Revisar periódicamente la integridad del tablero y las correas de inmovilización.</li>
+    <li>Capacitación del personal: Asegurarse de que el personal esté capacitado en el uso adecuado del tablero espinal.</li>
+</ul>
+
+<h5>Guía de Uso de la Dama de Elche</h5>
+<h6>Descripción General</h6>
+<p>La Dama de Elche es un dispositivo de inmovilización cervical utilizado en emergencias médicas para estabilizar la columna cervical de pacientes con sospecha de lesiones en el cuello. Su diseño permite una inmovilización efectiva y segura durante el transporte del paciente.</p>
+
+<h6>Indicaciones</h6>
+<ul>
+    <li>Lesiones cervicales: Utilizado en casos de sospecha de lesiones en la columna cervical.</li>
+    <li>Trauma múltiple: Aplicable en situaciones de trauma múltiple donde se requiere inmovilización cervical.</li>
+</ul>
+
+<h6>Ventajas de la Dama de Elche</h6>
+<ol>
+    <li>Inmovilización cervical efectiva: Proporciona una inmovilización completa de la columna cervical.</li>
+    <li>Facilidad de uso: Fácil de colocar y ajustar.</li>
+    <li>Compatibilidad: Puede ser utilizado junto con otros dispositivos de inmovilización, como el tablero espinal.</li>
+</ol>
+
+<h6>Inconvenientes de la Dama de Elche</h6>
+<ol>
+    <li>Incomodidad: Puede ser incómodo para el paciente debido a su rigidez.</li>
+    <li>Limitación de movimientos: Puede limitar el acceso a ciertas áreas del cuerpo para monitoreo o intervenciones médicas.</li>
+</ol>
+
+<h6>Información Técnica de la Dama de Elche</h6>
+<ol>
+    <li>Materiales: Generalmente hecho de materiales ligeros pero resistentes.</li>
+    <li>Dimensiones: Diseñado para adaptarse a diferentes tamaños de cuello.</li>
+</ol>
+<img src="https://github.com/Crospirit/tecnicosguiaprueba/blob/images/tetracameral.jpg?raw=true" alt="Dama de elche" width="500" height="300">
+
+
+<h6>Guía de Utilización Técnica</h6>
+<ol>
+    <li>Preparación:
+        <ul>
+            <li>Asegurarse de que la Dama de Elche esté limpia y en buen estado.</li>
+        </ul>
+    </li>
+    <li>Colocación del paciente:
+        <ul>
+            <li>Colocar la Dama de Elche alrededor del cuello del paciente.</li>
+            <li>Asegurarse de que esté bien ajustada y que el paciente esté inmovilizado.</li>
+        </ul>
+    </li>
+    <li>Inmovilización:
+        <ul>
+            <li>Utilizar correas ajustables para asegurar la Dama de Elche en su lugar.</li>
+            <li>Verificar que el paciente esté inmovilizado durante todo el proceso de transporte.</li>
+        </ul>
+    </li>
+</ol></li>
+</ul>
+<h4>Dotación de Medios Humanos:</h4>
+<ul>
+    <li>Un conductor con el certificado de profesionalidad de transporte sanitario</li>
+    <li>Un ayudante</li>
+</ul>
+
+<h3>Ambulancia Tipo B (Soporte Vital Básico - SVB)</h3>
+<h4>Dotación de Medios Materiales:</h4>
+<ul>
+    <li>Camilla principal</li>
+    <li>Camilla de cuchara</li>
+    <li>Colchón de vacío</li>
+    <li>Dispositivo para trasladar a un paciente sentado</li>
+    <li>Sábana de traslado o lona de traslados</li>
+    <li>Tablero espinal largo completo con inmovilizador de cabeza y correas de sujeción</li>
+    <li>Dispositivo de tracción</li>
+    <li>Inmovilización, juego para fracturas</li>
+    <li>Dispositivos de inmovilización de la región cervical de la columna</li>
+    <li>Juego de collarines cervicales</li>
+    <li>Inmovilización de la parte superior en extensión de la columna</li>
+    <li>Chaleco de extricación<button class="accordion">Ver más</button>
+            <div class="panel"><h5>Guía de Uso del Chaleco de extricación</h5>
+<h6>Descripción General</h6>
+<p>El Chaleco de extricación es un dispositivo de inmovilización de columna utilizado en situaciones de emergencia, especialmente en accidentes donde las víctimas quedan atrapadas dentro de un vehículo y no pueden salir por sus propios medios. </p>
+
+<h6>Indicaciones</h6>
+<ul>
+    <li>Inmovilización de pacientes con sospecha de lesiones espinales: Especialmente útil en casos de accidentes de tráfico.</li>
+    <li>Extracción de pacientes atrapados: Facilita la extracción segura de pacientes desde vehículos u otros espacios confinados.</li>
+    <li>Uso en pacientes embarazadas: Adecuado para inmovilizar y trasladar a pacientes embarazadas en situaciones de emergencia.</li>
+</ul>
+
+<h6>Ventajas del Chaleco de extricación</h6>
+<ol>
+    <li>Inmovilización rápida y eficaz: Su diseño permite una rápida inmovilización de la columna espinal, lo que es crucial en situaciones de emergencia.</li>
+    <li>Flexibilidad y rigidez: Combina rigidez vertical con flexibilidad horizontal, proporcionando una inmovilización segura y cómoda.</li>
+    <li>Uso en diversas situaciones: Es especialmente útil en accidentes de tráfico y puede ser utilizado en pacientes embarazadas.</li>
+</ol>
+
+<h6>Inconvenientes del Chaleco de extricación</h6>
+<ol>
+    <li>Incomodidad: Puede ser incómodo para el paciente debido a su rigidez.</li>
+    <li>Limitación de movimientos: Puede limitar el acceso a ciertas áreas del cuerpo para monitoreo o intervenciones médicas.</li>
+</ol>
+<img src="https://github.com/Crospirit/tecnicosguiaprueba/blob/images/kendrick.jpg?raw=true" alt="Chaleco de extricación" width="500" height="300">
+<h6>Información Técnica del Emerkend</h6>
+<ol>
+    <li>Materiales: Confeccionado en tejido lona Pter, lo que le proporciona robustez y durabilidad.</li>
+    <li>Cintas y cierres: Equipado con cintas de colores y cierres de liberación rápida para facilitar su uso.</li>
+    <li>Asas: Dispone de tres asas para un mejor ajuste y manejo.</li>
+    <li>Radiotransparente: Permite la realización de radiografías sin necesidad de retirar el dispositivo.</li>
+    <li>Componentes: Incluye el inmovilizador, una almohada y dos barbuquejos.</li>
+    <li>Accesorios: Se suministra con una bolsa de transporte y un manual de utilización.</li>
+
+</ol>
+
+    </li>
+</ol>
+
+
+    <li>Oxígeno en estacionamiento</li>
+    <li>Oxígeno portátil</li>
+    <li>Resucitador con entrada de oxígeno y máscaras y cánulas para todas las edades y depósito de oxígeno</li>
+    <li>Dispositivo de aspiración no manual, con una presión mínima de -65 kPa con una capacidad mínima de 1 L</li>
+</ul>
+<h4>Dotación de Medios Humanos:</h4>
+<ul>
+    <li>Un conductor con el certificado de profesionalidad de transporte sanitario</li>
+    <li>Un ayudante o un/a enfermero/a (DUE) o un/a médico/a</li>
+</ul>
+
+<h3>Ambulancia Tipo C (Soporte Vital Avanzado - SVA)</h3>
+<h4>Dotación de Medios Materiales:</h4>
+<ul>
+    <li>Todo el equipamiento de una ambulancia tipo B</li>
+    <li>Monitor desfibrilador con marcapasos externo</li>
+    <li>Respirador automático</li>
+    <li>Equipo de intubación</li>
+    <li>Equipo de perfusión</li>
+    <li>Material para acceso venoso y administración de medicamentos</li>
+    <li>Material para la administración de fluidos</li>
+    <li>Material para la administración de medicamentos</li>
+    <li>Material para la monitorización de constantes vitales</li>
+</ul>
+<h4>Dotación de Medios Humanos:</h4>
+<ul>
+    <li>Un conductor con el certificado de profesionalidad de transporte sanitario</li>
+    <li>Un/a enfermero/a (DUE)</li>
+    <li>Un/a médico/a</li>
+</ul></p>
+</section>
+        <section id="Movilizacion">
+ <h2>Guía Completa de Movilización en Pacientes Politraumatizados</h2>
+
+    <h3>Importancia de la inmovilización del politraumatizado</h3>
+    <p>
+        La inmovilización adecuada en pacientes politraumatizados es crucial, ya que busca estabilizar las lesiones preexistentes y prevenir la aparición de lesiones secundarias que podrían agravar el estado del paciente, dificultando su recuperación. En muchos casos, estas lesiones adicionales pueden llegar a ser incapacitantes o incluso mortales.
+    </p>
+
+    <p>
+        El transporte del paciente debe realizarse lo más rápido posible, pero sin comprometer la evaluación primaria, la reanimación y el tratamiento inicial. Mantener un equilibrio entre rapidez y seguridad es esencial en estos casos.
+    </p>
+
+    <h3>Inmovilización en el lugar del accidente</h3>
+    <p>
+        La inmovilización del paciente se lleva a cabo en el lugar del accidente por el equipo de rescate, prestando especial atención a la columna vertebral, ya que las lesiones en esta área son extremadamente graves. Los dispositivos de inmovilización no deben retirarse hasta que, en un centro médico, se descarte una lesión vertebral mediante pruebas radiológicas.
+    </p>
+
+    <p>
+        La necesidad de inmovilización de la columna se puede determinar por la cinemática del trauma, las lesiones provocadas por mecanismos de alta energía o por la aparición de signos y síntomas específicos de lesiones vertebrales.
+    </p>
+
+    <h3>Situaciones en las que se debe sospechar de lesiones vertebrales</h3>
+    <ul>
+        <li>Impactos severos en la cabeza, cuello, tronco, pelvis o extremidades.</li>
+        <li>Movimientos bruscos de aceleración, desaceleración o flexión lateral.</li>
+        <li>Caídas desde altura considerable.</li>
+        <li>Vuelcos en vehículos sin cinturón de seguridad o con víctimas expulsadas.</li>
+        <li>Víctimas de explosiones.</li>
+        <li>Inmersión en agua poco profunda.</li>
+        <li>Trauma de alto impacto, como muertes en el mismo vehículo o colisiones a alta velocidad.</li>
+        <li>Colisiones de peatones o ciclistas con vehículos.</li>
+        <li>Accidentes en motocicletas.</li>
+    </ul>
+
+    <h3>Movilización e inmovilización espinal y de los miembros</h3>
+    <p>
+        La atención al paciente politraumatizado en términos de inmovilización espinal y de miembros incluye diferentes técnicas:
+    </p>
+    <ol>
+        <li>Técnica de volteo de decúbito prono a supino.</li>
+        <li>Uso de dispositivos específicos como el tablero espinal largo o la camilla de cuchara.</li>
+        <li>Movilización sin el uso de material.</li>
+        <li>Inmovilización de miembros afectados.</li>
+    </ol>
+
+    <h3>Inmovilización cervical manual</h3>
+    <p>
+        Antes de realizar cualquier movilización espinal, es imprescindible inmovilizar la región cervical. Si se sospecha de una inestabilidad en la columna vertebral o no se puede descartar, debe realizarse una inmovilización manual de la cabeza de inmediato. Esto se consigue colocando las manos en la cabeza del paciente y llevándola a una posición neutral, limitando cualquier tipo de movimiento.
+    </p>
+
+    <p>
+        Está contraindicado movilizar la cabeza si esta maniobra provoca espasmos musculares, aumento del dolor, aparición o empeoramiento de síntomas neurológicos (hormigueo, adormecimiento, dificultades motoras) o afecta la respiración del paciente. En estos casos, se debe inmovilizar la cabeza en la posición en la que se encontró inicialmente.
+    </p>
+
+    <h3>Inmovilización adecuada del paciente</h3>
+    <p>
+        La inmovilización completa se realiza con el paciente en posición supina sobre una tabla espinal larga, manteniendo la alineación de toda la columna. Además del collar cervical, se utilizan inmovilizadores laterales de cabeza y correas ajustadas para evitar cualquier movimiento lateral o longitudinal durante el transporte.
+    </p>
+
+    <p>
+        Es importante tener en cuenta la anatomía del paciente, como la curvatura natural de la columna en personas mayores o en aquellos con deformidades previas. En niños, debido a la proporción entre la cabeza y el cuerpo, se recomienda colocar almohadillas bajo los hombros para evitar la hiperflexión o hiperextensión cervical.
+    </p>
+
+    <p>
+        En pacientes agitados o agresivos, se debe mantener la inmovilización con los recursos disponibles, evitando que el paciente se lesione aún más debido a sus movimientos.
+    </p>
+
+    <h3>Técnicas de inmovilización manual de la cabeza</h3>
+    <h4>Desde atrás</h4>
+    <p>
+        El operador se coloca detrás del paciente, posicionando los meñiques bajo la mandíbula y los pulgares en la parte posterior del cráneo. Los otros dedos se colocan sobre la cara para llevar la cabeza a la posición neutra.
+    </p>
+
+    <h4>Desde adelante</h4>
+    <p>
+        El operador se coloca frente al paciente, apoyando los meñiques en la parte posterior del cráneo y los pulgares bajo los pómulos, abrazando la cara para alinear la cabeza en posición neutra.
+    </p>
+
+    <h4>Desde el lado</h4>
+    <p>
+        El operador sostiene la cabeza del paciente con una mano en la parte posterior del cráneo, mientras con la otra mano se aplican los dedos sobre las mejillas bajo los pómulos, llevando la cabeza a la posición alineada.
+    </p>
+<h3>Movilización en bloque del paciente politraumatizado</h3>
+    <p>
+        El paciente politraumatizado debe movilizarse preferentemente en bloque, manteniendo alineados la cabeza, el cuello y el tronco. Es fundamental que nadie realice movimientos sin la orden del rescatador que se encuentra estabilizando la cabeza (el líder de la maniobra). Este líder dará instrucciones claras (1, 2, 3) y se asegurará de que todo el equipo esté preparado antes de iniciar el movimiento. 
+    </p>
+    <p>
+        Antes de emplear los dispositivos de inmovilización espinal, el paciente debe colocarse en decúbito supino usando técnicas de volteo.
+    </p>
+
+    <h3>Técnica de volteo para pasar a un paciente de decúbito prono a decúbito supino</h3>
+    <p>
+        Para voltear al paciente desde decúbito prono a supino, la maniobra será liderada por el rescatador 1, el más experimentado, que se situará en la cabeza del paciente. Este rescatador tendrá la responsabilidad de estabilizar manualmente la cabeza y el cuello durante todo el proceso, calculando el giro para evitar cruzar los brazos y dificultar el movimiento. Además, determinará hacia qué lado se realizará el giro, basándose en las lesiones del paciente, el espacio disponible y otros factores. Se recomienda voltear al paciente hacia el lado opuesto de donde esté su cara.
+    </p>
+
+    <h4>Funciones de los rescatadores en la maniobra de volteo:</h4>
+    <ol>
+        <li>
+            <strong>Rescatador 1:</strong> Como líder, sujeta la cabeza del paciente y se asegura de la correcta alineación del cuello, sin cruzar los brazos durante el giro.
+        </li>
+        <li>
+            <strong>Rescatador 2:</strong> Alinea los brazos del paciente suavemente, sin forzar las articulaciones. Deja el brazo opuesto al giro pegado al tronco, mientras que el brazo del lado hacia el que se realizará el giro queda extendido hacia la cabeza. Luego, sujeta el hombro y la cadera del lado contrario, sosteniendo también el brazo del paciente con la mano que sujeta la cadera.
+        </li>
+        <li>
+            <strong>Rescatador 3:</strong> Alinea las extremidades inferiores del paciente y luego se coloca junto al rescatador 2, sujetando la pelvis y la rodilla.
+        </li>
+    </ol>
+
+    <p>
+        El equipo debe girar al paciente hasta colocarlo en decúbito lateral. Si hay un tablero espinal disponible, este es el momento ideal para colocarlo bajo la espalda del paciente.
+    </p>
+
+    <p>
+        Posteriormente, el equipo debe continuar con el giro para llevar al paciente a decúbito supino con la ayuda del tablero espinal. En caso de no disponer de este, la maniobra debe realizarse en bloque, asegurando siempre la correcta inmovilización cervical y el control de la vía aérea.
+    </p>
+
+    <h3>Colocación del collarín cervical</h3>
+    <p>
+        Es fundamental colocar el collarín cervical correctamente. Aunque no inmoviliza completamente la columna cervical, ayuda a protegerla de compresiones y limita el rango de movimiento de la cabeza. Los collares cervicales de mejor calidad pueden reducir hasta un 75% el rango de flexión, y un 50% en otros movimientos.
+    </p>
+
+    <p>
+        Elegir la medida y presión de cierre correctas es clave para garantizar una buena inmovilización. Un collar que sea demasiado corto permitirá una flexión excesiva, mientras que uno demasiado largo puede causar hiperextensión. Además, un collar flojo no será efectivo y puede interferir con la vía aérea, cubriendo el mentón o incluso obstruyendo la boca o la nariz. Por otro lado, un collar muy apretado puede comprimir las venas del cuello, comprometiendo la circulación.
+    </p>
+
+    <p>
+        Un collar bien ajustado debe permitir que el paciente abra la boca y no debe interferir en el manejo de la vía aérea ni la aspiración de vómitos.
+    </p>
+
+    <p>
+        Si la cabeza del paciente no se ha podido alinear correctamente, no se debe colocar el collarín. En su lugar, se debe mantener la inmovilización manual hasta que se pueda corregir la posición de la cabeza.
+    </p>
+
+    <h4>Pasos para colocar el collarín cervical</h4>
+    <ol>
+        <li>El rescatador que mantiene la inmovilización manual de la cabeza (rescatador 1) continúa estabilizando la columna cervical del paciente.</li>
+        <li>El rescatador 2 coloca la parte posterior del collar cervical (la parte más larga) detrás del cuello del paciente.</li>
+        <li>A continuación, el rescatador 2 coloca la parte anterior del collar, asegurándose de que el mentón del paciente quede bien apoyado en la sección horizontal del collar.</li>
+        <li>Finalmente, el rescatador 2 fija el collar utilizando el cierre de velcro, ajustándolo correctamente para evitar movimientos excesivos sin comprometer la comodidad o la vía aérea del paciente.</li>
+    </ol>
+
+</body>
+
+    <h2>Técnicas de movilización con tablero espinal largo</h2>
+    <p>
+        La valoración inicial del paciente politraumatizado tiene como objetivo detectar lesiones que amenacen la vida. La extracción utilizando material de inmovilización puede llevar tiempo, pero debe tenerse en cuenta el concepto de la "hora de oro", que sugiere que los pacientes con lesiones graves deben recibir tratamiento quirúrgico adecuado durante la primera hora para aumentar sus posibilidades de supervivencia y reducir secuelas.
+    </p>
+</body>
+<h3> Puente Holandés</h3>
+
+<p>Sistema de movilización rápida mediante un levantamiento en bloque de la víctima, en la que el paciente queda entre las piernas de los sanitarios que colocan sus manos a ambos lados de éste, haciendo un mínimo levantamiento, mientras otro sanitario desliza el tablero espinal o la camilla por debajo del paciente.</p>
+
+<h4>Consideraciones previas:</h4>
+
+<p>Indicaciones: Situaciones de emergencia o peligro con necesidad de movilización de urgencia en espacio reducido para el uso de material específico (camilla de palas, tablero espinal, colchón de vacío).</p>
+
+<h4>Técnica:</h4>
+
+<ul>
+  <li>Coloque, previamente, el collarín cervical.</li>
+  <li>Realice la técnica con al menos cinco sanitarios.</li>
+  <li>Uno de los sanitarios se coloca a la cabeza del paciente, mirando hacia los pies del mismo, realizando control cervical y dirigiendo la maniobra.</li>
+  <li>Tres sanitarios se colocan sobre el paciente, con las piernas abiertas una a cada lado del mismo, mirando hacia su cabeza, de manera que uno se ponga sobre los hombros, el otro sobre la pelvis y el tercero, a la altura de las piernas.</li>
+  <li>Los sanitarios deben sujetar al paciente lateralmente de los hombros, pelvis y piernas (pantorrillas), con una mano a cada lado, que harán de base para su elevación.</li>
+  <li>A la orden del sanitario colocado en la cabeza, se levanta al paciente lo suficiente para pasar por debajo la camilla con la cual se realiza la recogida definitiva, manteniendo en todo momento el eje cráneo-cérvico-dorsal y miembros inferiores.</li>
+  <li>El quinto sanitario será el encargado de deslizar por debajo la camilla.</li>
+  <li>Una vez colocado sobre la camilla, realice la técnica adecuada para la inmovilización y movilización según su procedimiento.</li>
+</ul>
+
+    <h3> Técnica del Log Roll</h3>
+    <p><strong>Descripción:</strong> Esta técnica se utiliza para girar al paciente de manera segura.</p>
+    <p><strong>Procedimiento:</strong></p>
+    <ol>
+        <li>Se necesitan al menos tres personas.</li>
+        <li>Una persona estabiliza la cabeza y el cuello, mientras las otras dos giran el cuerpo en bloque hacia un lado.</li>
+        <li>Esto permite inspeccionar la espalda del paciente y colocar la tabla espinal.</li>
+        <li>El movimiento debe ser coordinado y en bloque para evitar cualquier torsión de la columna.</li>
+    </ol>
+
+    
+
+  
+
+    
+
+    <h3>Volteo Lateral</h3>
+
+<p>El volteo lateral es una técnica utilizada para girar al paciente de manera segura, manteniendo la alineación de la columna vertebral y permitiendo la inspección de la espalda y la colocación de dispositivos como el tablero espinal.</p>
+
+
+
+<h4>Técnica</h4>
+
+<ul>
+ <li>El movimiento debe ser coordinado desde el rescatador 1 que se coloca en la cabeza a la orden de 1,2,3.</li>
+  <li>Coloque, previamente, el collarín cervical.</li>
+  <li>Realice la técnica con al menos tres personas.</li>
+  <li>Una persona se coloca a la cabeza del paciente, estabilizando la cabeza y el cuello.</li>
+  <li>Dos personas se colocan a lo largo del cuerpo del paciente, una a la altura de los hombros y la otra a la altura de las caderas.</li>
+  <li>A la orden de la persona que estabiliza la cabeza, girar al paciente en bloque hacia un costado, manteniendo la alineación de la columna vertebral.</li>
+  <li>Inspeccionar la espalda del paciente y colocar el tablero espinal debajo del mismo.</li>
+  <li>Girar al paciente de nuevo en bloque sobre el tablero espinal.</li>
+
+</ul>
+
+
+
+
+ 
+<h3> Uso de la Camilla de Palas, Cuchara o Tijera</h3>
+    <li>Ajustar la camilla a la longitud del paciente y separarla en dos mitades.</li>
+        <li>Introducir cada mitad por los laterales del paciente mediante un volteo mínimo.</li>
+        <li>Cerrar la camilla primero en la cabeza y luego en los pies, evitando pellizcar la piel.</li>
+        <li>Verificar el cierre correcto para evitar que se abra durante el traslado.</li>
+        <li>Retirar la camilla antes del traslado, ya que puede transmitir vibraciones que empeorarían las lesiones.</li>
+    </ol>
+ <h3>Uso del Colchón de Vacío</h3>
+    <p><strong>Descripción:</strong> El colchón de vacío es un dispositivo utilizado para la inmovilización y movilización de pacientes politraumatizados.</p>
+    <p><strong>Procedimiento:</strong></p>
+    <ol>
+        <li>Desplegar el colchón y asegurarse de que la válvula esté hacia arriba y a los pies del paciente.</li>
+        <li>Repartir de forma homogénea el relleno del interior del colchón.</li>
+        <li>Colocar una sábana doblada sobre el colchón para evitar el contacto directo del paciente con el plástico.</li>
+        <li>Colocar al paciente sobre el colchón y ajustar las correas laterales.</li>
+        <li>Conectar una bomba para retirar el aire del colchón, permitiendo que se adapte a la forma del paciente y se endurezca.</li>
+    </ol>
+
+
+<h3> Uso de Férulas</h3>
+    <p><strong>Descripción:</strong> Si el paciente tiene fracturas, se deben utilizar férulas para inmovilizar las extremidades afectadas.</p>
+    <p><strong>Procedimiento:</strong></p>
+    <ol>
+        <li>Colocar la férula alrededor de la extremidad fracturada.</li>
+        <li>Ajustarla para inmovilizar la zona afectada.</li>
+        <li>Las férulas deben ser aplicadas antes de cualquier movimiento para evitar el agravamiento de las fracturas.</li>
+    </ol>
+    <h3> Uso Combinado de Férulas de Vacío y Colchón de Vacío</h3>
+    <p><strong>Descripción:</strong> Es posible utilizar férulas de vacío al mismo tiempo que el colchón de vacío para proporcionar una inmovilización más completa y segura.</p>
+    <p><strong>Procedimiento:</strong></p>
+    <ol>
+        <li><strong>Inmovilización de las extremidades:</strong> Colocar las férulas de vacío en las extremidades lesionadas y extraer el aire para inmovilizarlas.</li>
+        <li><strong>Colocación del paciente en el colchón de vacío:</strong> Colocar al paciente sobre el colchón de vacío y ajustar las correas laterales.</li>
+        <li><strong>Extracción del aire del colchón:</strong> Conectar una bomba para retirar el aire del colchón, permitiendo que se adapte a la forma del paciente y se endurezca.</li>
+    </ol>
+
+   
+    <h3>Retirada del Casco</h3>
+    <p><strong>Descripción:</strong> La retirada del casco es crucial para evaluar y manejar las vías respiratorias del paciente, pero debe hacerse con mucho cuidado para evitar lesiones cervicales.</p>
+    <p><strong>Procedimiento:</strong></p>
+    <ol>
+        <li><strong>Estabilización de la cabeza y el cuello:</strong> Una persona estabiliza la cabeza y el cuello del paciente mientras otra se prepara para retirar el casco.</li>
+        <li><strong>Desabrochar la correa del casco:</strong> Desabrochar la correa de la barbilla del casco.</li>
+        <li><strong>Retirada del casco:</strong> La persona que está detrás del paciente agarra el casco con ambas manos y lo retira lentamente hacia arriba y hacia afuera de la cabeza del paciente. Si el casco se atasca, no forzarlo; estabilizar nuevamente la cabeza y el cuello y volver a intentarlo.</li>
+    </ol>
+ <h2>Extricación</h2>
+<h4> Retirada del Cinturón de Seguridad</h4>
+    <p><strong>Descripción:</strong> La retirada del cinturón de seguridad debe hacerse con cuidado para evitar agravar las lesiones del paciente.</p>
+    <p><strong>Procedimiento:</strong></p>
+    <ol>
+        <li><strong>Evaluación del paciente:</strong> Evaluar el estado del paciente y estabilizar la cabeza y el cuello.</li>
+        <li><strong>Desabrochar el cinturón:</strong> Desabrochar el cinturón de seguridad con cuidado, asegurándose de no mover bruscamente al paciente.</li>
+        <li><strong>Retirada del cinturón:</strong> Retirar el cinturón de seguridad lentamente, asegurándose de que no esté enredado o atrapado.</li>
+    </ol>
+    <p><strong>Cuándo cortar el cinturón de seguridad:</strong></p>
+    <ul>
+        <li>Cuando el cinturón está atascado y no se puede desabrochar.</li>
+        <li>Cuando el cinturón está causando presión sobre una lesión o dificultando la respiración del paciente.</li>
+        <li>Cuando el paciente está inconsciente y es necesario acceder rápidamente para realizar maniobras de reanimación o estabilización.</li>
+        <li>Cuando hay riesgo de incendio o explosión y es necesario acelerar la extracción del paciente del vehículo.</li>
+    </ul>
+
+    <h4>Uso del Kendrick Extrication Device (KED)</h4>
+    <p><strong>Descripción:</strong> El KED es un dispositivo utilizado para inmovilizar y extraer a una persona traumatizada de un vehículo en caso de accidente de tráfico.</p>
+    <p><strong>Procedimiento:</strong></p>
+    <ol>
+        <li><strong>Aplicación del collarín cervical:</strong> Colocar un collarín cervical para inmovilizar el cuello.</li>
+        <li><strong>Colocación del KED:</strong> Colocar el KED detrás del paciente, asegurándose de que llegue hasta las axilas.</li>
+        <li><strong>Ajuste de las correas:</strong> Asegurar las correas del torso (amarilla, roja y verde) y las correas de las piernas.</li>
+        <li><strong>Inmovilización de la cabeza:</strong> Colocar un cojín detrás de la cabeza del paciente y asegurar las correas de la cabeza.</li>
+        <li><strong>Extracción del paciente:</strong> Con la ayuda de otros rescatistas, mover al paciente en bloque y deslizarlo fuera del vehículo.</li>
+    </ol>
+
+    <h4>Uso del Emerkend</h4>
+    <p><strong>Descripción:</strong> El Emerkend es otro dispositivo de inmovilización utilizado en situaciones de emergencia, especialmente en accidentes de tráfico.</p>
+    <p><strong>Procedimiento:</strong></p>
+    <ol>
+        <li><strong>Aplicación del collarín cervical:</strong> Colocar un collarín cervical para inmovilizar el cuello.</li>
+        <li><strong>Colocación del Emerkend:</strong> Colocar el Emerkend detrás del paciente, asegurándose de que llegue hasta las axilas.</li>
+        <li><strong>Ajuste de las correas:</strong> Asegurar las correas del torso (verde, amarilla, roja,cabeza y las correas del muslo).</li>
+        <li><strong>Inmovilización de la cabeza:</strong> Colocar un cojín detrás de la cabeza del paciente y asegurar las correas de la cabeza.</li>
+        <li><strong>Extracción del paciente:</strong> Con la ayuda de otros rescatistas, mover al paciente en bloque y deslizarlo fuera del vehículo.</li>
+    </ol>
+<h3>Extricación rápida</h3>
+ <p>Indicado cuando el paciente presenta problemas mortales o el entorno es peligroso.</p>
+<h4>Extricación Rápida en Bloque</h4>
+    <p><strong>Descripción</strong>: Esta técnica se utiliza cuando es necesario sacar al paciente del vehículo de manera urgente. Consiste en movilizar al paciente en bloque, manteniendo la alineación neutra de la columna cervical.</p>
+    <p>Procedimiento:</p>
+    <ol>
+        <li><strong>Inmovilización cervical</strong>: Colocar un collarín cervical al paciente.</li>
+        <li><strong>Soporte manual</strong>: Dos rescatadores sostienen la cabeza y el cuello del paciente.</li>
+        <li><strong>Extracción en bloque</strong>: Con la ayuda de una tabla espinal, el paciente es extraído del vehículo en una sola maniobra, evitando movimientos bruscos.</li>
+    </ol>
+ <h4>Maniobra de Rautek</h4>
+    <ol>
+        <li>Liberar los pies del accidentado si precisa.</li>
+        <li>Aproximación a la víctima desde un costado.</li>
+        <li>Deslizar nuestros brazos bajo las axilas de la víctima.</li>
+        <li>Sujetar su brazo con una de nuestras manos y con la otra su mentón. El lesionado queda “apoyado contra el pecho del socorrista”.</li>
+        <li>Moverse lentamente, extrayendo al accidentado del interior del vehículo (mantener en bloque toda la columna).</li>
+        <li>Una vez extraída, depositarla poco a poco sobre el suelo o una camilla.</li>
+        <li>Si hay un 2º socorrista, ayudaría agarrando las piernas para facilitar el giro en el interior del vehículo.</li>
+    </ol>
+ <h4>Técnica de la boa o anaconda</h4>
+    <ol>
+        <li>Colocar un collarín cervical.</li>
+        <li>Envolver el cuello con una sábana, cruzando los extremos por la nuca y pasándolos bajo las axilas hacia la espalda.</li>
+        <li>Girar y levantar al paciente usando la sábana para centrarlo en la puerta del vehículo y luego colocarlo sobre el tablero espinal.</li>
+    </ol>
+
+   
+
+</section> 
+
+      
+ </style>
+</body>
+</html>
+ 
+        <section id="simulacros" class="hidden">
+              <header>
+       <h2>SIMULACROS</h2>
+        
+ </header>
+
+    <div class="case">
+        <h2>Caso Práctico 1: Mobilización de Paciente con Alta Sospeita de Lesión Vertebral</h2>
+(Domingo 15:00h)
+        <p><span class="dialogue">TES:</span> A-123, adiante.</p>
+        <p><span class="dialogue">Central:</span> A-123: Temos un aviso. Mozo de 19 anos,M.L.L., caída de bicicleta. O paciente está consciente. O alertante é o pai. A ubicación é un camiño ao final dunha costa cerca da aldea de Rañadoiro de abaixo. Cal é o voso tempo estimado de chegada ao punto?</p>
+        <p><span class="dialogue">TES:</span> Estamos a uns 5 minutos do lugar. Informaremos ao chegar.</p>
+        <p><span class="dialogue">Central:</span> Recibido, probablemente sexa trasladar e nada máis. Bo servizo. Queredes que vos pase co alertante?</p>
+    </div>
+
+    <div class="case">
+        <h2>Caso Práctico 2: Trauma Térmico </h2>
+(Sábado 22:05h)
+        <p><span class="dialogue">TES:</span> A-456, adiante.</p>
+        <p><span class="dialogue">Central:</span> A-456: Temos unha emerxencia. Varón de 45 anos. Sufriu queimaduras tras a explosión dun disolvente inflamable en O Corgo. O alertante é o propio paciente e non deu moita información ademais da súa ubicación. Parece que tén moita dor. Agora mesmo non hai médicos nin enfermeiros dispoñibles no PAC próximo debido a un domicilio en Corneas. A "medicalizada" (AASVA) non está activa pero pronto estará libre. Cal é o voso tempo estimado de chegada ao punto?</p>
+        <p><span class="dialogue">TES:</span> Estamos a uns 10 minutos do lugar. Informaremos ao chegar.</p>
+        <p><span class="dialogue">Central:</span> Recibido e bo servizo.</p>
+    </div>
+
+    <div class="case">
+        <h2>Caso Práctico 3: TCE/Politrauma </h2>
+(Domingo 12:40h)
+        <p><span class="dialogue">TES:</span> A-789, adiante.</p>
+        <p><span class="dialogue">Central:</span> A-789: É unha emerxencia. Muller, 25 anos en vía pública na carretera Fonsagrada-Lugo a altura de Pedrouzos. O alertante é outro motorista que ía con ela. A rapaza está consciente e fala ainda que o acompañante di que a "hostia foi grande". O equipo médico e de enfermería do PAC chegará máis tarde, xa que se atopa nun domicilio no Vilar da Cuiña. As Forzas de Orden Público (FOP) desprazanse desde Castroverde. Cal é o voso tempo estimado de chegada ao punto?</p>
+        <p><span class="dialogue">TES:</span> Estamos a uns 5 minutos do lugar. Informaremos ao chegar.</p>
+        <p><span class="dialogue">Central:</span> Recibido e bo servizo.</p>
+    </div>
+
+    <div class="case">
+        <h2>Caso Práctico 4: Amputación Traumática de Man</h2>
+(Sábado 22:05h)
+        <p><span class="dialogue">TES:</span> A-321, adiante.</p>
+        <p><span class="dialogue">Central:</span> A-321: Temos unha emerxencia. Un varón de 45 anos sufriu unha amputación traumática da man dereita mentres traballaba cun apeiro de sega agrícola. O alertante é un veciño que está no lugar. Non temos máis datos. A ubicación é un prado entre Triacastela e Becerreá. Temos coordenadas: 42.1234567, -7.654321. Cal é o voso tempo estimado de chegada ao punto?</p>
+        <p><span class="dialogue">TES:</span> Estamos a uns 15 minutos do lugar. Informaremos ao chegar.</p>
+        <p><span class="dialogue">Central:</span> Recibido. Queredes que vos pase co alertante.</p>
+    </div>
+
+    <div class="case">
+        <h2>Caso Práctico 5: Traumatismo Torácico e Fractura de Extremidade</h2>
+(Luns 11:30h)
+        <p><span class="dialogue">TES:</span> A-654, adiante.</p>
+        <p><span class="dialogue">Central:</span> A-654: Temos unha emerxencia. Varón de 50 anos.Consciente con dificultade respiratoria e unha extremidade inferior afectada. O alertante relata que o incidente ocorreu en Rao, Navia de Suarna. O equipo do Centro de Saude están nun domicilio en Louxas. Vós debedes percorrer un camiño pendente de 500 metros a pé, xa que non é transitable coa ambulancia. Cal é o voso tempo estimado de chegada ao punto?</p>
+        <p><span class="dialogue">TES:</span> Estamos a uns 20 minutos do lugar. Informaremos ao chegar. Podes pasarnos co alertante?</p>
+        <p><span class="dialogue">Central:</span> Un segundiño. Pasovos co alertante, bo servizo.</p>
+    </div>
+
+    <div class="case">
+        <h2>Caso Práctico 6: Accidente múltiple no Corredor Sarria-Lugo</h2>
+        <p><span class="dialogue">Central:</span> Emerxencia. Un vehículo familiar sufriu un accidente nunha estrada secundaria a gran velocidade, no corredor de Sarria-Lugo. Os primeiros en chegar son os Técnicos en Emerxencias Sanitarias (TES), que veñen xusto dun retorno. Ao avaliar a escena, atopan o seguinte:</p>
+        <ul>
+            <li><span class="dialogue">Neno de 2 anos:</span> Está no asento traseiro, sen cinto de seguridade. Presenta unha lesión grave na cabeza (fractura aberta de cranio con perda significativa de masa encefálica). Respira lentamente.</li>
+            <li><span class="dialogue">Condutor (pai do neno, 40 anos):</span> Faleceu no acto debido a lesións torácicas masivas. Non presenta signos de vida.</li>
+            <li><span class="dialogue">Muller de 35 anos (esposa do condutor e nai do neno):</span> Disnea. Ademais, presenta unha lesión penetrante no flanco esquerdo. Pide que axuden ao seu fillo.</li>
+            <li><span class="dialogue">Outro pasaxeiro (amigo da familia, 45 anos):</span> Está atrapado no asento dianteiro, consciente e orientado. Presenta dor na rexión cervical, signos de contusión torácica leve e parestesias nas mans.</li>
+        </ul>
+    </div>
+             <div class="case">
+        <h2>Caso Práctico 1: Marcha con Muletas en Superficie Plana</h2>
+        <p><span class="dialogue">Instrutor:</span> Este caso práctico trata dun paciente simulado que necesita aprender a camiñar con muletas nunha superficie plana.</p>
+        <p><span class="dialogue">Instrucións:</span></p>
+        <ul>
+            <li>Axuste das muletas á altura correcta para o paciente simulado.</li>
+            <li>Práctica da técnica de marcha con tres puntos (muletas e perna lesionada movéndose xuntas).</li>
+            <li>Práctica individual de percorridos en superficie plana mantendo a técnica correcta.</li>
+        </ul>
+        <p><span class="dialogue">Posición do técnico:</span> Lixeiramente detrás e ao lado do paciente, preparado para soster ao paciente se perde o equilibrio.</p>
+    </div>
+
+    <div class="case">
+        <h2>Caso Práctico 2: Subir e Baixar Escaleiras con Muletas</h2>
+        <p><span class="dialogue">Instrutor:</span> Neste caso, o paciente simulado necesita subir e baixar escaleiras utilizando muletas.</p>
+        <p><span class="dialogue">Instrucións:</span></p>
+        <ul>
+            <li>Práctica da técnica de subir escaleiras (primeiro a perna boa, logo as muletas e a perna lesionada).</li>
+            <li>Práctica da técnica de baixar escaleiras (primeiro as muletas e a perna lesionada, logo a perna boa).</li>
+            <li>Práctica supervisada con varias subidas e baixadas.</li>
+        </ul>
+        <p><span class="dialogue">Posición do técnico:</span></p>
+        <ul>
+            <li>Subindo: Detrás do paciente, preparado para ofrecer apoio.</li>
+            <li>Baixando: Diante do paciente, un chanzo por debaixo para soster en caso de perda de equilibrio.</li>
+        </ul>
+    </div>
+
+    <div class="case">
+        <h2>Caso Práctico 3: Uso de Bastón en Superficie Plana</h2>
+        <p><span class="dialogue">Instrutor:</span> O paciente simulado debe aprender a camiñar cun bastón nunha superficie plana.</p>
+        <p><span class="dialogue">Instrucións:</span></p>
+        <ul>
+            <li>Axustar o bastón á altura correcta para o paciente simulado.</li>
+            <li>Práctica da técnica de marcha movendo o bastón e a perna oposta ao mesmo tempo.</li>
+            <li>Práctica individual de percorridos mantendo a técnica correcta.</li>
+        </ul>
+        <p><span class="dialogue">Posición do técnico:</span> Lixeiramente detrás e ao lado do paciente, preparado para soster ao paciente se perde o equilibrio.</p>
+    </div>
+
+    <div class="case">
+        <h2>Caso Práctico 4: Subir e Baixar Escaleiras con Bastón</h2>
+        <p><span class="dialogue">Instrutor:</span> Este caso práctico ensina a un paciente simulado a subir e baixar escaleiras utilizando un bastón.</p>
+        <p><span class="dialogue">Instrucións:</span></p>
+        <ul>
+            <li>Subir escaleiras: Primeiro a perna boa, logo o bastón e a perna lesionada.</li>
+            <li>Baixar escaleiras: Primeiro o bastón e a perna lesionada, logo a perna boa.</li>
+            <li>Práctica supervisada de varias subidas e baixadas.</li>
+        </ul>
+        <p><span class="dialogue">Posición do técnico:</span></p>
+        <ul>
+            <li>Subindo: Detrás do paciente, preparado para ofrecer apoio.</li>
+            <li>Baixando: Diante do paciente, un chanzo por debaixo para soster en caso de perda de equilibrio.</li>
+        </ul>
+    </div>
+
+    <div class="case">
+        <h2>Caso Práctico 5: Subir e Baixar da Ambulancia con Muletas</h2>
+        <p><span class="dialogue">Instrutor:</span> Neste caso, o paciente simulado aprende a subir e baixar da ambulancia utilizando muletas.</p>
+        <p><span class="dialogue">Instrucións:</span></p>
+        <ul>
+            <li>Subir: Primeiro a perna boa, logo as muletas e a perna lesionada.</li>
+            <li>Baixar: Primeiro as muletas e a perna lesionada, logo a perna boa.</li>
+            <li>Práctica supervisada con varios exercicios de subida e baixada.</li>
+        </ul>
+        <p><span class="dialogue">Posición do técnico:</span> Ao lado do paciente, asegurándose de que está estable durante a subida e a baixada.</p>
+    </div>
+
+    <div class="case">
+        <h2>Caso Práctico 6: Subir e Baixar da Ambulancia con Bastón</h2>
+        <p><span class="dialogue">Instrutor:</span> Neste caso, o paciente simulado debe aprender a subir e baixar da ambulancia utilizando un bastón.</p>
+        <p><span class="dialogue">Instrucións:</span></p>
+        <ul>
+            <li>Subir: Primeiro a perna boa, logo o bastón e a perna lesionada.</li>
+            <li>Baixar: Primeiro o bastón e a perna lesionada, logo a perna boa.</li>
+            <li>Práctica supervisada con varios exercicios de subida e baixada.</li>
+        </ul>
+        <p><span class="dialogue">Posición do técnico:</span> Ao lado do paciente, asegurándose de que está estable durante a subida e a baixada.</p>
+    </div>
+
+</section>
+
+
+    <section id="test" class="hidden">
+<div class="container">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Standard */
+    }
+    h1 {
+        text-align: center;
+        color: #FF4500; /* Color naranja para el título */
+        font-size: 36px; /* Tamaño de fuente más grande para el título */
+        font-weight: bold;
+        text-shadow: 2px 2px #FFD700; /* Sombra para el título */
+    }
+    .container {
+        max-width: 800px;
+        margin: auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   word-wrap: break-word; /* Ajusta el texto largo */
+    word-break: break-word; /* Ajusta el texto largo */
+}
+    .question {
+        margin-bottom: 20px;
+    }
+    .question p {
+        font-size: 18px;
+        font-weight: bold;
+        color: #6582BC; /* Azul cielo oscuro */
+    }
+    .question label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    #submitBtn {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    #submitBtn:hover {
+        background-color: #45a049;
+    }
+    .score {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+    }
+    footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        color: #666;
+    }
+</style>
+    <div class="container">
+    <h1>Cuestionario Movilización del Paciente en el Traslado al Centro Sanitario </h1>
+
+    <form id="quizForm">
+         <!-- Pregunta 1 -->
+        <div class="question">
+                 <p>1. Para transferir a un paciente de una camilla a una silla de ruedas, se debe:</p>
+            <label><input type="radio" name="q1" value="a"> Elevar al paciente con un solo rescatador, sujetándolo por debajo de los brazos.</label>
+            <label><input type="radio" name="q1" value="b"> Inclinar la silla de ruedas hacia atrás para facilitar el traslado.</label>
+            <label><input type="radio" name="q1" value="c"> Usar la técnica de transferencia pivotante, asegurándose de que ambos dispositivos estén frenados.</label>
+            <label><input type="radio" name="q1" value="d"> Movilizar al paciente directamente sin frenar los dispositivos para ahorrar tiempo.</label>
+            <label><input type="radio" name="q1" value="e"> Colocar la camilla en inclinación y deslizar al paciente hacia la silla de ruedas.</label>
+          
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="question">
+            <p>2. Señale la correcta:</p>
+            <label><input type="radio" name="q2" value="a"> Los andadores son una buena opción para los pacientes con movilidad reducida.</label>
+            <label><input type="radio" name="q2" value="b"> Cuando un paciente camina con dificultad, es mejor que deambule lo menos posible.</label>
+            <label><input type="radio" name="q2" value="c"> La marcha en 4 puntos solo se realiza en pacientes con suficiente fuerza en los brazos y un miembro inferior sin apoyo.</label>
+            <label><input type="radio" name="q2" value="d"> Los andadores deben evitarse en pacientes con problemas de equilibrio.</label>
+            <label><input type="radio" name="q2" value="e"> Ninguna de las anteriores es correcta.</label>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="question">
+            <p>3. El bastón se coloca:</p>
+            <label><input type="radio" name="q3" value="a"> En el lado afectado.</label>
+            <label><input type="radio" name="q3" value="b"> En el lado contrario al afectado.</label>
+            <label><input type="radio" name="q3" value="c"> Da igual dónde se coloque.</label>
+            <label><input type="radio" name="q3" value="d"> Debe estar más bajo que la altura de las caderas.</label>
+            <label><input type="radio" name="q3" value="e"> Ajustado a la altura del pecho cuando se apoya el brazo.</label>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="question">
+            <p>4. Para subir una escalera con muletas:</p>
+            <label><input type="radio" name="q4" value="a"> Se sube primero la pierna sana.</label>
+            <label><input type="radio" name="q4" value="b"> Se sube primero la pierna afectada.</label>
+            <label><input type="radio" name="q4" value="c"> Se sube primero la muleta.</label>
+            <label><input type="radio" name="q4" value="d"> El paciente sube primero lo que mejor le convenga.</label>
+            <label><input type="radio" name="q4" value="e"> Siempre debe apoyarse primero la muleta y luego la pierna afectada.</label>
+        </div>
+        <!-- Pregunta 5 -->
+         <div class="question">
+        <p>5. ¿Cómo debe colocarse correctamente un collarín cervical en un paciente consciente con sospecha de lesión cervical?</p>
+    <label><input type="radio" name="q5" value="a"> Ajustándolo primero por la parte posterior del cuello y luego cerrándolo en la parte frontal.</label>
+    <label><input type="radio" name="q5" value="b"> Colocándolo alrededor del cuello sin ajustar para evitar molestias.</label>
+    <label><input type="radio" name="q5" value="c"> Ajustándolo primero por la parte frontal y luego asegurando la parte posterior.</label>
+    <label><input type="radio" name="q5" value="d"> Siempre con la ayuda de un dispositivo de tracción cervical.</label>
+    <label><input type="radio" name="q5" value="e"> Solamente después de inmovilizar el resto del cuerpo.</label>
+    </div>
+        <!-- Pregunta 6 -->
+        <div class="question">
+            <p>6. Para bajar una escalera con muletas:</p>
+            <label><input type="radio" name="q6" value="a"> Se bajan primero las muletas.</label>
+            <label><input type="radio" name="q6" value="b"> Se baja primero la pierna sana.</label>
+            <label><input type="radio" name="q6" value="c"> Se baja primero la pierna afectada.</label>
+            <label><input type="radio" name="q6" value="d"> Las muletas deben bajar junto a la pierna sana al mismo tiempo.</label>
+            <label><input type="radio" name="q6" value="e"> Ninguna de las anteriores</label>
+        </div>
+
+        <!-- Pregunta 7 -->
+        <div class="question">
+            <p>7. Para levantar un peso:</p>
+            <label><input type="radio" name="q7" value="a"> Se deben flexionar las piernas.</label>
+            <label><input type="radio" name="q7" value="b"> No se deben flexionar las piernas.</label>
+            <label><input type="radio" name="q7" value="c"> El máximo recomendado son 30 Kg.</label>
+            <label><input type="radio" name="q7" value="d"> El máximo recomendado son 35 Kg.</label>
+            <label><input type="radio" name="q7" value="e">A y C son correctas</label>
+        </div>
+
+        <!-- Pregunta 8 -->
+        <div class="question">
+            <p>8. Para girarnos con un peso debemos:</p>
+            <label><input type="radio" name="q8" value="a"> Mover los pies para girar y no rotar la cintura.</label>
+            <label><input type="radio" name="q8" value="b"> Rotar la cintura para girarnos y no mover los pies.</label>
+            <label><input type="radio" name="q8" value="c"> Llevar el peso separado del cuerpo.</label>
+            <label><input type="radio" name="q8" value="d"> Rotar la cintura y mover los pies.</label>
+            <label><input type="radio" name="q8" value="e"> Ninguna de las anteriores.</label>
+        </div>
+
+<!-- Pregunta 9 -->
+        <div class="question">
+              <p>9. ¿Cómo debe proceder un equipo de rescate al movilizar a un paciente politraumatizado que se encuentra en decúbito prono?</p>
+            <label><input type="radio" name="q9" value="a"> Girar al paciente bruscamente para colocarle en decúbito supino lo antes posible.</label>
+            <label><input type="radio" name="q9" value="b"> Realizar un volteo en bloque con el líder a cargo de la cabeza, girando al paciente hacia el lado de la cara.</label>
+            <label><input type="radio" name="q9" value="c"> Realizar un volteo en bloque con el líder a cargo de la cabeza, girando al paciente hacia el lado opuesto de la cara.</label>
+            <label><input type="radio" name="q9" value="d"> Fijar la cabeza y volver a neutro en pacientes que presenten dolor cervical al movimiento u hormigueo en extremidades, colocar collarín y realizar un volteo en bloque con el líder a cargo de la cabeza, girando al paciente hacia el lado opuesto de la cara.</label>
+            <label><input type="radio" name="q9" value="e"> Elevar la cabeza del paciente mientras se gira lentamente el tronco y las piernas.</label>
+       
+        </div>
+
+        <!-- Pregunta 10 -->
+        <div class="question">
+            <p>10. En un paciente consciente con fractura de tibia y peroné, la movilización inicial debe incluir:</p>
+            <label><input type="radio" name="q10" value="a"> No cubrir la superficie ósea</label>
+            <label><input type="radio" name="q10" value="b"> Limpiar con agua y jabón, cubrir con gasa estéril e inmovilización con férula  antes de cualquier movilización.</label>
+            <label><input type="radio" name="q10" value="c"> Colocar al paciente directamente en el colchón de vacío sin inmovilización previa.</label>
+            <label><input type="radio" name="q10" value="d"> Si le ponemos una férula de vacío es incompatible con el colchón de vacío.</label>
+            <label><input type="radio" name="q10" value="e"> Ninguna de las anteriores.</label>
+        </div>
+
+        <!-- Pregunta 11 -->
+        <div class="question">
+            <p>11. Señale la incorrecta. En un paciente inconsciente en la cama de su domicilio sin sospecha de lesión cervical, para trasladarlo a una camilla se debe utilizar:</p>
+            <label><input type="radio" name="q11" value="a"> Collarían cervical y camilla de palas.</label>
+            <label><input type="radio" name="q11" value="b"> Maniobra de arrastre axilar con inmovilización parcial.</label>
+            <label><input type="radio" name="q11" value="c"> Técnica de Puente Holandés con al menos tres personas.</label>
+            <label><input type="radio" name="q11" value="d"> Uso de una manta o sábana para deslizar al paciente hacia la camilla.</label>
+            <label><input type="radio" name="q11" value="e"> Todas son correctas.</label>
+        </div>
+
+        <!-- Pregunta 12 -->
+        <div class="question">
+            <p>12. En un escenario con un paciente atrapado en un vehículo sin compromiso ABC y sospecha de lesión de columna cervical, la técnica más adecuada para extricarlo sería:</p>
+            <label><input type="radio" name="q12" value="a"> Extricación rápida con maniobra de arrastre axilar.</label>
+            <label><input type="radio" name="q12" value="b"> Extricación controlada con chaleco de extracción (KED) y collarín cervical.</label>
+            <label><input type="radio" name="q12" value="c"> Extricación con maniobra de Rautek.</label>
+            <label><input type="radio" name="q12" value="d"> Extracción directa con ayuda de un tablero espinal sin estabilización previa.</label>
+            <label><input type="radio" name="q12" value="e"> Movilización inmediata hacia la camilla sin inmovilización para evitar retrasos.</label>
+        </div>
+  
+</div>
+
+<div id="score" class="score"></div>
+        <button type="button" id="submitBtn" onclick="calcularCalificacion()">Corregir</button>
+    </form>
+</div>
+<div id="falladas" style="margin-top: 20px; background-color: #f9f9f9; padding: 15px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1);"></div>
+
+    <script>
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+
+    // Variable para rastrear si ya se ha corregido
+    let cuestionarioCorregido = false;
+
+    function calcularCalificacion() {
+        if (cuestionarioCorregido) {
+            alert("Ya has corregido el cuestionario. Por favor, recarga la página para intentarlo de nuevo.");
+            return;
+        }
+
+        let respuestasCorrectas = {
+            "q1": "c",
+            "q2": "a",
+            "q3": "b",
+            "q4": "a",
+            "q5": "a",
+            "q6": "a",
+            "q7": "a",
+            "q8": "a",
+            "q9": "c",
+            "q10": "e",
+            "q11": "d",
+            "q12": "b"
+        };
+
+        let totalPreguntas = 12;
+        let puntaje = 0;
+        let preguntasFalladas = []; // Para almacenar preguntas falladas
+
+        // Bucle para comprobar las respuestas
+        for (let pregunta in respuestasCorrectas) {
+            let seleccionada = document.querySelector(`input[name="${pregunta}"]:checked`);
+            if (seleccionada && seleccionada.value === respuestasCorrectas[pregunta]) {
+                puntaje++;
+            } else {
+                preguntasFalladas.push(pregunta.replace("q", "Pregunta ")); // Formatear el nombre de la pregunta
+            }
+        }
+
+        // Mostrar el resultado
+        let resultado = `Has obtenido ${puntaje} de ${totalPreguntas}`;
+        document.getElementById("score").innerText = resultado;
+
+        // Mostrar preguntas falladas de forma bonita
+        let falladasDiv = document.getElementById("falladas");
+        falladasDiv.innerHTML = ""; // Limpiar contenido previo
+
+        if (preguntasFalladas.length > 0) {
+            falladasDiv.innerHTML = `
+                <h3 style="color: red;">Preguntas Falladas:</h3>
+                <ul style="list-style: none; padding: 0;">
+                    ${preguntasFalladas.map(p => `<li style="color: #FF4500; font-weight: bold;">${p}</li>`).join("")}
+                </ul>
+            `;
+        } else {
+            falladasDiv.innerHTML = `
+                <h3 style="color: green;">¡Felicidades!</h3>
+                <p style="color: #4CAF50; font-weight: bold;">Has respondido correctamente todas las preguntas.</p>
+            `;
+        }
+
+        // Marcar el cuestionario como corregido y deshabilitar el botón
+        cuestionarioCorregido = true;
+        document.getElementById("submitBtn").disabled = true;
+    }
+</script>
+
+</section>
+
+ 
+        
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+
+<script>
+    // Mostrar y ocultar el contenido del primer botón
+    document.getElementById("tiposTraumaBtn").addEventListener("click", function() {
+        var tiposTrauma = document.getElementById("tiposTrauma");
+        if (tiposTrauma.style.display === "flex") {
+            tiposTrauma.style.display = "none";
+        } else {
+            tiposTrauma.style.display = "flex";
+        }
+    });
+
+    // Mostrar y ocultar el contenido del segundo botón
+    document.getElementById("imvBtn").addEventListener("click", function() {
+        var imv = document.getElementById("imv");
+        if (imv.style.display === "flex") {
+            imv.style.display = "none";
+        } else {
+            imv.style.display = "flex";
+        }
+    });
+</script>
+<script>
+    // Ocultar todas las secciones al cargar la página
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('hidden');
+        });
+    });
+
+    // Mostrar la sección "abcde" cuando se hace clic en el enlace correspondiente
+    document.querySelector('a[href="#abcde"]').addEventListener('click', () => {
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('hidden');
+        });
+        document.getElementById('abcde').classList.remove('hidden');
+    });
+
+    // Mostrar la sección "escalas" cuando se hace clic en el enlace correspondiente
+    document.querySelector('a[href="#escalas"]').addEventListener('click', () => {
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('hidden');
+        });
+        document.getElementById('escalas').classList.remove('hidden');
+    });
+
+    // Mostrar la sección "craneoencefalico" cuando se hace clic en el enlace correspondiente
+    document.querySelector('a[href="#craneoencefalico"]').addEventListener('click', () => {
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('hidden');
+        });
+        document.getElementById('craneoencefalico').classList.remove('hidden');
+    });
+
+    // Mostrar la sección "toracico-abdominal" cuando se hace clic en el enlace correspondiente
+    document.querySelector('a[href="#toracico-abdominal"]').addEventListener('click', () => {
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('hidden');
+        });
+        document.getElementById('toracico-abdominal').classList.remove('hidden');
+    });
+
+    // Mostrar la sección "extremidades-pelvis" cuando se hace clic en el enlace correspondiente
+    document.querySelector('a[href="#extremidades-pelvis"]').addEventListener('click', () => {
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('hidden');
+        });
+        document.getElementById('extremidades-pelvis').classList.remove('hidden');
+    });
+
+    // Mostrar la sección "raquimedular" cuando se hace clic en el enlace correspondiente
+    document.querySelector('a[href="#raquimedular"]').addEventListener('click', () => {
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('hidden');
+        });
+        document.getElementById('raquimedular').classList.remove('hidden');
+    });
+
+    // Mostrar la sección "termico" cuando se hace clic en el enlace correspondiente
+    document.querySelector('a[href="#termico"]').addEventListener('click', () => {
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('hidden');
+        });
+        document.getElementById('termico').classList.remove('hidden');
+    });
+
+    // Mostrar la sección "pediatrico" cuando se hace clic en el enlace correspondiente
+    document.querySelector('a[href="#pediatrico"]').addEventListener('click', () => {
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('hidden');
+        });
+        document.getElementById('pediatrico').classList.remove('hidden');
+    });
+
+    // Mostrar la sección "shock" cuando se hace clic en el enlace correspondiente
+    document.querySelector('a[href="#shock"]').addEventListener('click', () => {
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('hidden');
+        });
+        document.getElementById('shock').classList.remove('hidden');
+    });
+
+    // Mostrar la sección "coordinacion" cuando se hace clic en el enlace correspondiente
+    document.querySelector('a[href="#coordinacion"]').addEventListener('click', () => {
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('hidden');
+        });
+        document.getElementById('coordinacion').classList.remove('hidden');
+    });
+
+    // Mostrar la sección "víctimas" cuando se hace clic en el enlace correspondiente
+    document.querySelector('a[href="#víctimas"]').addEventListener('click', () => {
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('hidden');
+        });
+        document.getElementById('víctimas').classList.remove('hidden');
+    });
+
+    // Mostrar la sección "Dotación de medios materiales y humanos" cuando se hace clic en el enlace correspondiente
+    document.querySelector('a[href="#Dotación de medios materiales y humanos"]').addEventListener('click', () => {
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('hidden');
+        });
+        document.getElementById('Dotación de medios materiales y humanos').classList.remove('hidden');
+    });
+
+    // Mostrar la sección "Movilizacion" cuando se hace clic en el enlace correspondiente
+    document.querySelector('a[href="#Movilizacion"]').addEventListener('click', () => {
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('hidden');
+        });
+        document.getElementById('Movilizacion').classList.remove('hidden');
+    });
+
+    // Mostrar la sección "psicosocial" cuando se hace clic en el enlace correspondiente
+    document.querySelector('a[href="#psicosocial"]').addEventListener('click', () => {
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('hidden');
+        });
+        document.getElementById('psicosocial').classList.remove('hidden');
+    });
+
+    // Mostrar la sección "simulacros" cuando se hace clic en el enlace correspondiente
+    document.querySelector('a[href="#simulacros"]').addEventListener('click', () => {
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('hidden');
+        });
+        document.getElementById('simulacros').classList.remove('hidden');
+    });
+
+    // Mostrar la sección "test" cuando se hace clic en el enlace correspondiente
+    document.querySelector('a[href="#test"]').addEventListener('click', () => {
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('hidden');
+        });
+        document.getElementById('test').classList.remove('hidden');
+    });
+</script>
+ 
+ 
+    <footer>
+         <p>&copy; 2024 Eloy Díaz. Todos los derechos reservados. Queda prohibida la reproducción parcial o total de este documento sin autorización expresa.</p>
+        <p><strong>Nota:</strong> Esta guía es una recopilación personal de bibliografía y no constituye una guía de práctica clínica oficial ni cuenta con el aval de organismos científicos.</p>
+    </footer>
+
+</body>
+</html>
+
+</body>
+</html>
