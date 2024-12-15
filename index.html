@@ -1277,6 +1277,7 @@ body {
         background-color: #f4f4f4;
         margin: 0;
         padding: 20px;
+        font-size: 16px; /* Tamaño base de la fuente */
         -webkit-user-select: none; /* Safari */
         -moz-user-select: none; /* Firefox */
         -ms-user-select: none; /* Internet Explorer/Edge */
@@ -1296,21 +1297,21 @@ body {
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-   word-wrap: break-word; /* Ajusta el texto largo */
-    word-break: break-word; /* Ajusta el texto largo */
-}
+        word-wrap: break-word; /* Ajusta el texto largo */
+        word-break: break-word; /* Ajusta el texto largo */
+    }
     .question {
         margin-bottom: 20px;
     }
     .question p {
-        font-size: 18px;
+        font-size: 1.1rem; /* Tamaño de fuente uniforme */
         font-weight: bold;
         color: #6582BC; /* Azul cielo oscuro */
     }
     .question label {
         display: block;
         margin-bottom: 10px;
-        font-size: 16px;
+        font-size: 1rem; /* Tamaño de fuente ajustado */
         cursor: pointer;
     }
     #submitBtn {
@@ -1339,14 +1340,25 @@ body {
         font-size: 14px;
         color: #666;
     }
+
+    /* Aumentar ligeramente el tamaño de fuente para pantallas más pequeñas (móviles) */
+    @media (max-width: 600px) {
+        .question p {
+            font-size: 1.25rem; /* Ajusta el tamaño de la fuente en móviles */
+        }
+        body {
+            font-size: 1.1rem; /* Ajuste global para móviles */
+        }
+    }
 </style>
-    <div class="container">
+</head>
+<body>
+
+<div class="container">
     <h1>Cuestionario Movilización del Paciente en el Traslado al Centro Sanitario </h1>
- 
 
     <form id="quizForm">
          <!-- Pregunta 1 -->
-        <!-- Pregunta 1 -->
         <div class="question">
                  <p>1. Para transferir a un paciente de una camilla a una silla de ruedas, se debe:</p>
             <label><input type="radio" name="q1" value="a"> Elevar al paciente con un solo rescatador, sujetándolo por debajo de los brazos.</label>
@@ -1355,12 +1367,6 @@ body {
             <label><input type="radio" name="q1" value="d"> Movilizar al paciente directamente sin frenar los dispositivos para ahorrar tiempo.</label>
             <label><input type="radio" name="q1" value="e"> Colocar la camilla en inclinación y deslizar al paciente hacia la silla de ruedas.</label>
           
-            <p>1. ¿Cómo debe proceder un equipo de rescate al movilizar a un paciente politraumatizado que se encuentra en decúbito prono?</p>
-            <label><input type="radio" name="q1" value="a"> Girar al paciente bruscamente para colocarle en decúbito supino lo antes posible.</label>
-            <label><input type="radio" name="q1" value="b"> Realizar un volteo en bloque con el líder a cargo de la cabeza, girando al paciente hacia el lado de la cara.</label>
-            <label><input type="radio" name="q1" value="c"> Realizar un volteo en bloque con el líder a cargo de la cabeza, girando al paciente hacia el lado opuesto de la cara.</label>
-            <label><input type="radio" name="q1" value="d"> Fijar la cabeza y volver a neutro en pacientes que presenten dolor cervical al movimiento u hormigueo en extremidades, colocar collarín y realizar un volteo en bloque con el líder a cargo de la cabeza, girando al paciente hacia el lado opuesto de la cara.</label>
-            <label><input type="radio" name="q1" value="e"> Elevar la cabeza del paciente mientras se gira lentamente el tronco y las piernas.</label>
         </div>
 
         <!-- Pregunta 2 -->
@@ -1371,12 +1377,6 @@ body {
             <label><input type="radio" name="q2" value="c"> La marcha en 4 puntos solo se realiza en pacientes con suficiente fuerza en los brazos y un miembro inferior sin apoyo.</label>
             <label><input type="radio" name="q2" value="d"> Los andadores deben evitarse en pacientes con problemas de equilibrio.</label>
             <label><input type="radio" name="q2" value="e"> Ninguna de las anteriores es correcta.</label>
-            <p>2. ¿En qué situación es más recomendable utilizar la maniobra de tracción mandibular en lugar de la maniobra frente-mentón?</p>
-            <label><input type="radio" name="q2" value="a"> Cuando el paciente politraumatizado tiene una fractura en la mandíbula.</label>
-            <label><input type="radio" name="q2" value="b"> En pacientes inconscientes con sospecha de trauma craneoencefálico y sin necesidad de inmovilización cervical.</label>
-            <label><input type="radio" name="q2" value="c"> Si se sospecha de una lesión cervical en un paciente inconsciente, para despejar la vía aérea sin mover el cuello.</label>
-            <label><input type="radio" name="q2" value="d"> En pacientes conscientes con trauma facial severo y necesidad de intubación urgente.</label>
-            <label><input type="radio" name="q2" value="e"> En pacientes que no presentan lesiones cervicales pero tienen fracturas múltiples en las extremidades.</label>
         </div>
 
         <!-- Pregunta 3 -->
@@ -1387,12 +1387,6 @@ body {
             <label><input type="radio" name="q3" value="c"> Da igual dónde se coloque.</label>
             <label><input type="radio" name="q3" value="d"> Debe estar más bajo que la altura de las caderas.</label>
             <label><input type="radio" name="q3" value="e"> Ajustado a la altura del pecho cuando se apoya el brazo.</label>
-            <p>3. ¿Cuál es la forma correcta de colocar la manta térmica en un gran quemado?</p>
-            <label><input type="radio" name="q3" value="a"> Con el lado dorado hacia el interior para reflejar el calor corporal.</label>
-            <label><input type="radio" name="q3" value="b"> Con el lado plateado hacia el interior para reflejar el calor corporal.</label>
-            <label><input type="radio" name="q3" value="c"> Con el lado dorado hacia el exterior para absorber el calor del ambiente.</label>
-            <label><input type="radio" name="q3" value="d"> Con el lado plateado hacia el exterior para absorber el calor del ambiente.</label>
-            <label><input type="radio" name="q3" value="e"> No importa el lado, ambos son iguales.</label>
         </div>
 
         <!-- Pregunta 4 -->
@@ -1403,12 +1397,6 @@ body {
             <label><input type="radio" name="q4" value="c"> Se sube primero la muleta.</label>
             <label><input type="radio" name="q4" value="d"> El paciente sube primero lo que mejor le convenga.</label>
             <label><input type="radio" name="q4" value="e"> Siempre debe apoyarse primero la muleta y luego la pierna afectada.</label>
-            <p>4. ¿Cuál es la combinación recomendada para el manejo de la vía aérea en pacientes politraumatizados con sospecha de lesión cervical?</p>
-            <label><input type="radio" name="q4" value="a"> Collarín cervical y maniobra de Heimlich.</label>
-            <label><input type="radio" name="q4" value="b"> Maniobra frente-mentón y collarín cervical.</label>
-            <label><input type="radio" name="q4" value="c"> Inmovilización manual y compresas frías.</label>
-            <label><input type="radio" name="q4" value="d"> Collarín cervical y tracción mandibular.</label>
-            <label><input type="radio" name="q4" value="e"> VBM y maniobra frente-mentón.</label>
         </div>
         <!-- Pregunta 5 -->
          <div class="question">
@@ -1427,12 +1415,6 @@ body {
             <label><input type="radio" name="q6" value="c"> Se baja primero la pierna afectada.</label>
             <label><input type="radio" name="q6" value="d"> Las muletas deben bajar junto a la pierna sana al mismo tiempo.</label>
             <label><input type="radio" name="q6" value="e"> Ninguna de las anteriores</label>
-            <p>5. Una mujer sufre un accidente en la N-VI en Parga. El coche está fuera de la calzada y el sitio es seguro. En la valoración inicial de la paciente AVDN = D, Glasgow 7. El coche no está muy dañado, las puertas abren bien, y tenemos buen acceso y somos 3 rescatadores ¿Qué técnica de extricación está indicada en este caso?</p>
-            <label><input type="radio" name="q5" value="a"> Inmovilización cervical con Maniobra de Rautek, extricación rápida hacia tablero espinal, collarín cervical.</label>
-            <label><input type="radio" name="q5" value="b"> Inmovilización cervical, collarín cervical y extricación en bloque hacia un tablero espinal.</label>
-            <label><input type="radio" name="q5" value="c"> Inmovilización cervical, collarín, chaleco de extricación (KED) seguido de tablero espinal.</label>
-            <label><input type="radio" name="q5" value="d"> Eslinga de extricación hacia tablero espinal, collarín.</label>
-            <label><input type="radio" name="q5" value="e"> Inmovilización cervical, collarín, arrastre axilar hacia tablero espinal.</label>
         </div>
 
         <!-- Pregunta 7 -->
@@ -1444,15 +1426,6 @@ body {
             <label><input type="radio" name="q7" value="d"> El máximo recomendado son 35 Kg.</label>
             <label><input type="radio" name="q7" value="e">A y C son correctas</label>
         </div>
-<!-- Pregunta 6 -->
-<div class="question">
-    <p>6. En el caso de una quemadura de tercer grado en los brazos y tórax de un paciente, ¿qué medida NO sería adecuada en el contexto prehospitalario?</p>
-    <label><input type="radio" name="q6" value="a"> No aplicar Waterjel ya que se trata de una quemadura de tercer grado.</label>
-    <label><input type="radio" name="q6" value="b"> Cubrir la quemadura con apósitos estériles para protegerla.</label>
-    <label><input type="radio" name="q6" value="c"> Aplicar agua fría sobre la quemadura durante al menos 15 minutos.</label>
-    <label><input type="radio" name="q6" value="d"> Administrar oxígeno si hay signos de dificultad respiratoria.</label>
-    <label><input type="radio" name="q6" value="e"> Mantener al paciente abrigado para evitar la hipotermia.</label>
-</div>
 
         <!-- Pregunta 8 -->
         <div class="question">
@@ -1463,23 +1436,6 @@ body {
             <label><input type="radio" name="q8" value="d"> Rotar la cintura y mover los pies.</label>
             <label><input type="radio" name="q8" value="e"> Ninguna de las anteriores.</label>
         </div>
-<!-- Pregunta 7 -->
-<div class="question">
-    <p>7. Dos personas se han peleado en un domicilio de la Avenida de la Coruña. A nuestra llegada, está la Policía y un señor de aspecto pálido y sudoroso con un corte profundo en la cara interna del tercio superior del brazo derecho, con sangrado activo. ¿Qué medida tomamos inicialmente?</p>
-    <label><input type="radio" name="q7" value="a"> Presión local y sentamos al paciente.</label>
-    <label><input type="radio" name="q7" value="b"> Presión local y tumbamos al paciente.</label>
-    <label><input type="radio" name="q7" value="c"> Torniquete y tumbamos al paciente.</label>
-    <label><input type="radio" name="q7" value="d"> Torniquete y sentamos al paciente.</label>
-</div>
-<!-- Pregunta 8 -->
-<div class="question">
-    <p>8. Un paciente involucrado en un accidente de tráfico refiere dolor abdominal y presenta signos de shock hipovolémico. ¿Cuáles de las siguientes constantes vitales indican un shock hipovolémico?</p>
-    <label><input type="radio" name="q8" value="a"> TA: 120/80 mmHg, FC: 80 bpm.</label>
-    <label><input type="radio" name="q8" value="b"> TA: 180/70 mmHg, FC: 120 bpm.</label>
-    <label><input type="radio" name="q8" value="c"> TA: 90/50 mmHg, FC: 70 bpm.</label>
-    <label><input type="radio" name="q8" value="d"> TA: 85/55 mmHg, FC: 130 bpm.</label>
-    <label><input type="radio" name="q8" value="e"> TA: 110/70 mmHg, FC: 75 bpm.</label>
-</div>
 
 <!-- Pregunta 9 -->
         <div class="question">
@@ -1491,14 +1447,6 @@ body {
             <label><input type="radio" name="q9" value="e"> Elevar la cabeza del paciente mientras se gira lentamente el tronco y las piernas.</label>
        
         </div>
-<div class="question">
-    <p>9. Un niño de 18 meses ha estado involucrado en un accidente de tráfico. A nuestra llegada, tomamos sus constantes vitales y encontramos una frecuencia cardíaca (FC) de 110 bpm y una frecuencia respiratoria (FR) de 30 respiraciones por minuto. ¿Cuál es la interpretación correcta de estas constantes?</p>
-    <label><input type="radio" name="q9" value="a"> El niño está taquicárdico.</label>
-    <label><input type="radio" name="q9" value="b"> El niño está taquipneico.</label>
-    <label><input type="radio" name="q9" value="c"> La FC es normal, pero la FR es alta.</label>
-    <label><input type="radio" name="q9" value="d"> La FC es alta, pero la FR es normal.</label>
-    <label><input type="radio" name="q9" value="e"> Ambas constantes están dentro de los rangos normales.</label>
-</div>
 
         <!-- Pregunta 10 -->
         <div class="question">
@@ -1509,34 +1457,16 @@ body {
             <label><input type="radio" name="q10" value="d"> Si le ponemos una férula de vacío es incompatible con el colchón de vacío.</label>
             <label><input type="radio" name="q10" value="e"> Ninguna de las anteriores.</label>
         </div>
-<!-- Pregunta 10 -->
-<div class="question">
-    <p>10. Durante la ventilación con bolsa-mascarilla (BVM) en un paciente inconsciente, ¿cuál de las siguientes afirmaciones es correcta?</p>
-    <label><input type="radio" name="q10" value="a"> La ventilación BVM debe realizarse situándose a la izquierda del paciente.</label>
-    <label><input type="radio" name="q10" value="b"> La maniobra frente-mentón se utiliza cuando no hay sospecha de trauma cervical.</label>
-    <label><input type="radio" name="q10" value="c"> La ventilación con BVM debe realizarse situándose a la derecha del paciente.</label>
-    <label><input type="radio" name="q10" value="d"> La cánula de Guedel debe insertarse sin girarla para evitar lesiones.</label>
-    <label><input type="radio" name="q10" value="e"> La ventilación con BVM no requiere el uso de oxígeno suplementario.</label>
-</div>
 
         <!-- Pregunta 11 -->
         <div class="question">
-            <p>11. Señale la incorrecta. En un paciente inconsciente en la cama de su domicilio sin sospecha de lesión cervical, para trasladarlo a una camilla se debe utilizar:</p>
+            <p>11. En un paciente inconsciente en la cama de su domicilio sin sospecha de lesión cervical, para trasladarlo a una camilla se debe utilizar:</p>
             <label><input type="radio" name="q11" value="a"> Collarían cervical y camilla de palas.</label>
             <label><input type="radio" name="q11" value="b"> Maniobra de arrastre axilar con inmovilización parcial.</label>
             <label><input type="radio" name="q11" value="c"> Técnica de Puente Holandés con al menos tres personas.</label>
             <label><input type="radio" name="q11" value="d"> Uso de una manta o sábana para deslizar al paciente hacia la camilla.</label>
             <label><input type="radio" name="q11" value="e"> Todas son correctas.</label>
         </div>
-<!-- Pregunta 11 -->
-<div class="question">
-    <p>11. ¿Cuál es la complicación más temida en una fractura abierta de tibia y peroné?</p>
-    <label><input type="radio" name="q11" value="a"> Infección.</label>
-    <label><input type="radio" name="q11" value="b"> Dolor intenso.</label>
-    <label><input type="radio" name="q11" value="c"> Hemorragia.</label>
-    <label><input type="radio" name="q11" value="d"> Hipotermia.</label>
-    <label><input type="radio" name="q11" value="e"> Espasmos musculares.</label>
-</div>
 
         <!-- Pregunta 12 -->
         <div class="question">
@@ -1548,14 +1478,6 @@ body {
             <label><input type="radio" name="q12" value="e"> Movilización inmediata hacia la camilla sin inmovilización para evitar retrasos.</label>
         </div>
   
-<!-- Pregunta 12 -->
-<div class="question">
-    <p>12. En el caso de una amputación parcial con hemorragia activa, ¿cuál es la acción inicial correcta?</p>
-    <label><input type="radio" name="q12" value="a"> Amputar completamente para evitar infecciones.</label>
-    <label><input type="radio" name="q12" value="b"> Aplicar un vendaje compresivo y mantener el miembro alineado.</label>
-    <label><input type="radio" name="q12" value="c"> Aplicar un torniquete para detener la hemorragia.</label>
-    <label><input type="radio" name="q12" value="d"> Colocar el miembro afectado en agua fría.</label>
-    <label><input type="radio" name="q12" value="e"> Colocar hielo directamente sobre la amputación.</label>
 </div>
 
 <div id="score" class="score"></div>
@@ -1565,23 +1487,22 @@ body {
 <div id="falladas" style="margin-top: 20px; background-color: #f9f9f9; padding: 15px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1);"></div>
 
     <script>
-<script>
     document.addEventListener('contextmenu', function(e) {
         e.preventDefault();
     });
 
     // Variable para rastrear si ya se ha corregido
     let cuestionarioCorregido = false;
+
     function calcularCalificacion() {
         if (cuestionarioCorregido) {
             alert("Ya has corregido el cuestionario. Por favor, recarga la página para intentarlo de nuevo.");
             return;
         }
+
         let respuestasCorrectas = {
             "q1": "c",
             "q2": "a",
-           "q1": "c",
-            "q2": "c",
             "q3": "b",
             "q4": "a",
             "q5": "a",
@@ -1591,14 +1512,6 @@ body {
             "q9": "c",
             "q10": "e",
             "q11": "d",
-            "q4": "d",
-            "q5": "b",
-            "q6": "c",
-            "q7": "b",
-            "q8": "d",
-            "q9": "e",
-            "q10": "b",
-            "q11": "a",
             "q12": "b"
         };
 
@@ -1617,13 +1530,13 @@ body {
         }
 
         // Mostrar el resultado
-        // Calificación final sin mostrar respuestas correctas/incorrectas
         let resultado = `Has obtenido ${puntaje} de ${totalPreguntas}`;
         document.getElementById("score").innerText = resultado;
 
         // Mostrar preguntas falladas de forma bonita
         let falladasDiv = document.getElementById("falladas");
         falladasDiv.innerHTML = ""; // Limpiar contenido previo
+
         if (preguntasFalladas.length > 0) {
             falladasDiv.innerHTML = `
                 <h3 style="color: red;">Preguntas Falladas:</h3>
@@ -1637,10 +1550,10 @@ body {
                 <p style="color: #4CAF50; font-weight: bold;">Has respondido correctamente todas las preguntas.</p>
             `;
         }
+
         // Marcar el cuestionario como corregido y deshabilitar el botón
         cuestionarioCorregido = true;
         document.getElementById("submitBtn").disabled = true;
-        // Aquí podrías añadir el código para enviar la calificación al correo electrónico utilizando un backend
     }
 </script>
 
